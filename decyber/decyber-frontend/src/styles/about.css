@@ -1,0 +1,52 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.subteam {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    margin: 45px;
+    width: 300px;
+    height: auto;
+    border: 2px solid cyan;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.image_container {
+    margin-top: 7px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.profile_photo {
+    width: 100%;
+    height: auto;
+}
+
+.member_name {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    margin-top: 8px;
+}

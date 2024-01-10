@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #3D6343;
+    background-color : #01171b;
+    font-family: 'Iceland', cursive;
+}
+.world-map-svg{
+    width: 95vw;
+    height: 88vh;
+}
+.world-map-svg path{
+    /* stroke is for border color */
+    /* stroke-width is for width of border of countries */
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: .25;
+}
+.world-map-svg path:hover{
+    fill: #006284;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.capturable path{
+    fill: rgb(37, 219, 47);
+    stroke: #000000;
+    stroke-width: .25;
+}
+.danger path{
+    fill:crimson;
+}
+.team-country path{
+    fill: rgb(0, 106, 255);
+}
+.WorldMap .labels{
+    color: darkturquoise;
+}
+.labels h5{
+    font-size: 25px;
+}
+@media (width<=607px) {
+    .labels h5{
+        font-size: 1.25rem;
+    }
+}

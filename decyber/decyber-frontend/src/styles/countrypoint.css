@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #3D6343;
+    background-color : #01171b;
+}
+.CountryPoint{
+    background-color : #01171b;
+    width: 100vw;
+    height: 100vh;
+}
+.cp-content{
+    color:#3D6343;
+    margin: auto;
+    margin-top: 5rem;
+    width: 80vw;
+    /* background-color: #02353ebd; */
+    /* height: 25rem; */
+    border-radius: 2rem;
+}
+.cp-subcontent{
+    font-size: 1rem;
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.cp-subcontent textarea{
+    border-radius: 1rem;
+    padding: .5rem;
+    background: transparent;
+}
+.cp-subcontent textarea:focus{
+    outline: 1px solid lightgreen;
+    caret-color: cyan;
+    font-weight: 400;
+    color: white;
+}
+@media (width<=415px) {
+    .question{
+        flex-direction: column;
+    }
+    .question .points-display{
+        width: 5rem;
+        margin-left: 0;
+    }
+    .question .points-pallete{
+        width: 5rem;
+    }
+    #main-ques{
+        height: 5rem;
+        overflow-y: scroll;
+        padding: .3rem;
+    }
+}

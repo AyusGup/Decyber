@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #3D6343;
+    background-color : #01171b;
+}
+.ArmyPoint{
+    background-color : #01171b;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5rem;
+}
+.carousel-content{
+    margin: auto;
+    width: 80vw;
+    /* height: 25rem; */
+    /* background-color: #01424dbd; */
+    border-radius: 2rem;
+}
+.carousel-subcontent{
+    /* background: transparent; */
+    font-size: 1.2rem;
+}
+.question-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    background: transparent;
+}
+.question-section textarea{
+    border-radius: 1rem;
+    padding: .5rem;
+    color: white;
+    background: transparent;
+}
+.question-section textarea:focus{
+    outline: 1px solid rgb(126, 255, 126);
+    caret-color: cyan;
+    font-weight: 400;
+}
+.question{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-right: 1rem;
+    background: transparent;
+}
+.question-pallete{
+    color: rgb(36, 161, 214);
+    background: transparent;
+    margin-right: .5rem;
+}
+.question-pallete > a{
+    background: transparent;
+}
+.question-pallete > a:hover{
+    color:lime;
+}
+.question .points-pallete{
+    width: 8rem;
+    background-image: linear-gradient(70deg,rgb(64, 249, 255),rgb(0, 255, 4));
+    /* background-color: rgba(255,255,255,0.3); */
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+.question .points-display{
+    margin-bottom: .6rem;
+    margin-left: auto;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(255, 255, 255, 0.578);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: rgba(255, 255, 255, 0.578);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: rgba(255, 255, 255, 0.578);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgba(255, 255, 255, 0.578);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgba(255, 255, 255, 0.578);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: rgba(255, 255, 255, 0.578);
+}
+@media (width<=415px) {
+    .question{
+        flex-direction: column;
+    }
+    .question .points-display{
+        width: 5rem;
+        margin-left: 0;
+    }
+    .question .points-pallete{
+        width: 5rem;
+    }
+    #main-ques{
+        height: 5rem;
+        overflow-y: scroll;
+        padding: .3rem;
+    }
+}

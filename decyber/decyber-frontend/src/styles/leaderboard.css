@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #3D6343;
+    background-color: #01171b;
+}
+
+.leader-board {
+    width: 50%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+}
+
+.leader-board * {
+    background-color: transparent;
+}
+
+.leader-board .table-layout {
+    width: 100%;
+    text-align: center;
+}
+
+.leader-board .table-layout table {
+    width: 100%;
+}
+
+table tbody>tr {
+    border-bottom: 1px solid rgba(119, 245, 134, 0.503);
+}
+
+table tbody tr th {
+    color: aquamarine;
+}
+
+table tbody tr td {
+    color: cyan;
+}
+
+@media screen and (max-width :540px) {
+    .leader-board {
+        width: 90%;
+    }
+}

@@ -1,0 +1,20 @@
+.Login {
+    color: #3D6343;
+    background-color: #01171b;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Login .login_form * {
+    background-color: transparent;
+    color: rgb(91, 253, 202);
+}
+
+.Login .login_form {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.Login .login_form input {
+    background-color: rgba(0, 0, 0, 0.543);
+}
