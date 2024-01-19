@@ -1,13 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    color: #3D6343;
+    color: cyan;
     background-color : #01171b;
+    /* background-image: url("../../public/bg-img.png"); */
+    background-repeat: repeat;
     font-family: 'Iceland', cursive;
 }
+.WorldMap{
+    width: 95%;
+    height: 95%;
+}
 .world-map-svg{
-    width: 95vw;
-    height: 88vh;
+    width: 90%;
+    height: 90%;
 }
 .world-map-svg path{
     /* stroke is for border color */

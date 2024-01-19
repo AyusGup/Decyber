@@ -2,7 +2,7 @@
   text-align: center;
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,4 +51,17 @@
 100% {
   transform: rotate(360deg);
 }
+}
+.below-navcontent{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.sideContent{
+  width: 75vw;
+    height: 100%;
+    border: cyan solid 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-block-end: 30px;
 }

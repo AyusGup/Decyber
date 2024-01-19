@@ -1,0 +1,25 @@
+.SideBar{
+    width: 20vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navContent{
+    display: flex;
+    gap: 10vw;
+}
+.layoutItem{
+    text-align: center;
+}
+.profile-Logout{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 20px;
+}
