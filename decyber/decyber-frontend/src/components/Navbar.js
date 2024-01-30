@@ -23,8 +23,8 @@ export default function Navbar(props) {
           />
           {/* <img src="../invictus.png" alt="DeCyber" width="120" height="50" className="d-inline-block align-text-top" /> */}
         </Link>
-
-        <div className="navContent">
+        <div className="nav-top-bar">
+          {/* <div className="navContent"> */}
           <div className="layoutItem">
             <Link
               className="nav-link active"
@@ -97,6 +97,7 @@ export default function Navbar(props) {
               )}
             </div>
           </div>
+          {/* </div> */}
         </div>
       </nav>
     </div>

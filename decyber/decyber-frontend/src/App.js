@@ -49,7 +49,6 @@ function App() {
                 <Alert alert={alert} />
                 <Navbar showAlert={showAlert} />
                 <div className="below-navcontent">
-                  <Sidebar />
                   <div className="sideContent">
                     <Routes>
                       <Route exact path="/" element={<WorldMap />} />
@@ -93,6 +92,7 @@ function App() {
                       />
                     </Routes>
                   </div>
+                  <Sidebar />
                 </div>
               </BrowserRouter>
             </ScoreboardState>
