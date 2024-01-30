@@ -10,6 +10,8 @@
 .WorldMap{
     width: 95%;
     height: 95%;
+    border-radius: 20px;
+    margin: auto;
 }
 .world-map-svg{
     width: 90%;

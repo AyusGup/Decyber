@@ -1,20 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    color: #3D6343;
-    background-color: #01171b;
-}
 
 .Dashboard {
-    background-color: #01171b;
+    /* background-color: #01171b; */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .dashboard-outlier {
     /* flex-direction: row; */
-    width: 85vw;
-    height: 40rem;
+    width: 74vw;
+    min-height: 40rem;
     margin: auto;
 }
 
@@ -153,7 +147,7 @@ table tbody tr td {
 }
 
 .country-points .cps div {
-    background-color: #01171b;
+    /* background-color: #01171b; */
     width: 85%;
     height: 85%;
     border-radius: 50%;
@@ -186,7 +180,7 @@ table tbody tr td {
 }
 
 .army-points .aps>div {
-    background-color: #01171b;
+    /* background-color: #01171b; */
     width: 85%;
     height: 85%;
     border-radius: 50%;
