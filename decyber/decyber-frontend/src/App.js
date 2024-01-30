@@ -18,6 +18,7 @@ import Rules from "./components/Rules";
 import React, { useState } from "react";
 import Leaderboard from "./components/Leaderboard";
 import Sidebar from "./components/Sidebar";
+import CountrySlide from "./components/CountrySlide";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -56,6 +57,11 @@ function App() {
                         exact
                         path="/ap"
                         element={<ArmyPoint showAlert={showAlert} />}
+                      />
+                      <Route
+                        exact
+                        path="/CountrySlide/:idx"
+                        element={<CountrySlide />}
                       />
                       <Route
                         exact
