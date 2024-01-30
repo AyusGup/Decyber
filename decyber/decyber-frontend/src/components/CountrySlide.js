@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/CountrySlide.css";
+import { Link } from "react-router-dom";
 // import CountryBox from "./CountryBox";
 import { useParams } from "react-router-dom";
 const CountrySlide = () => {
@@ -41,11 +42,11 @@ const CountrySlide = () => {
           <div className="boxes-grid">
             {/* Country[i].companies.map */}
             {Country[i].companies.map((Name, index) => (
-              <button className="company-box">
+              <Link className="company-box" to={`/cp/${Name}`}>
                 <div className="company-box-name" key={index}>
                   {Name}
                 </div>
-              </button>
+              </Link>
             ))}
           </div>
         </div>

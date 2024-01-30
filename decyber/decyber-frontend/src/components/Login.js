@@ -17,7 +17,7 @@ export default function Login(props) {
         e.preventDefault();
         // const response = await fetch("http://localhost:8000/api/auth/login", {
         setLoader(true);
-        const response = await fetch("https://decyber-backend.vercel.app/api/auth/login", {
+        const response = await fetch("http://localhost:8000/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

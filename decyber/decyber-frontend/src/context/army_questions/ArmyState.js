@@ -3,7 +3,7 @@ import ArmyContext from "./armyContext";
 
 const ArmyState = (props) => {
     // const host = "http://localhost:8000";
-    const host = "https://decyber-backend.vercel.app";
+    const host = "http://localhost:8000";
     const [loader, setLoader] = useState(false)
     const apqItem = [{
         "type": 0,
