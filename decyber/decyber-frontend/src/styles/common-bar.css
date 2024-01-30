@@ -4,10 +4,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: end;
+}
+.mobile-button{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 20px;
 }
 .navContent{
     display: flex;
-    gap: 10vw;
+    
 }
 .layoutItem{
     text-align: center;
@@ -16,10 +32,26 @@
     display: flex;
     flex-direction: row;
 }
-nav{
+.nav-top-bar{
+    /* align-self: end; */
+    /* justify-self: end; */
+    right: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px 20px;
+    gap: 10vw;
+}
+
+@media (max-width: 800px) {
+    .mobile-button{
+        display: block;
+    }
+    /* .SideBar{
+        display: none;
+    } */
+    nav{
+        flex-direction: column;
+    }
+    .nav-top-bar{
+        justify-content: space-between;
+        width: 100%;
+    }
 }

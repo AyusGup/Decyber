@@ -33,15 +33,19 @@ const CountrySlide = () => {
       <div className="CountrySlide">
         <div className="desh">
           <div className="CountryName-title">{Country[i].title}</div>
-          <div>{Country[i].pic}</div>
+          <div className="pic-border-box">
+            <div className="pic-inside-box">{Country[i].pic}</div>
+          </div>
         </div>
         <div className="companies-box">
           <div className="boxes-grid">
             {/* Country[i].companies.map */}
             {Country[i].companies.map((Name, index) => (
-              <div className="company-box" key={index}>
-                {Name}
-              </div>
+              <button className="company-box">
+                <div className="company-box-name" key={index}>
+                  {Name}
+                </div>
+              </button>
             ))}
           </div>
         </div>

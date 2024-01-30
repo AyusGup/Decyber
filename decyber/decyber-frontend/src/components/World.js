@@ -636,7 +636,8 @@ const World = ({ armypoints }) => {
       </Link>
       <Link
         title="India"
-        to={armypoints <= 65 ? "/" : "/cp/India"}
+        // to={armypoints <= 65 ? "/" : "/cp/India"}
+        to={armypoints <= 65 ? "/CountrySlide/2" : "/cp/India"}
         className={armypoints <= 65 ? "danger" : "capturable"}
       >
         <path
@@ -1391,7 +1392,8 @@ const World = ({ armypoints }) => {
       </Link>
       <Link
         title="USA"
-        to={armypoints <= 60 ? "/" : "/cp/USA"}
+        // to={armypoints <= 60 ? "/" : "/cp/USA"}
+        to={armypoints <= 60 ? "/CountrySlide/1" : "/cp/USA"}
         className={armypoints <= 60 ? "danger" : "capturable"}
       >
         <path

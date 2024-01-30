@@ -6,9 +6,14 @@
     display: flex;
     justify-content: space-between;
     min-height: 500px;
+    padding: 5px;
 }
 .desh{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .CountryName-title{
     color: #CDD7E2;
@@ -19,23 +24,40 @@
     height: 100px;
     padding-top: 40px;
 }
-.CountryIMG{
+
+.pic-border-box{
     width: 500px;
-    height: 400px;
+    height: 500px;
+    background-image:  url("../../public/CountryBorder.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .companies-box{
-    width: 50%;
+    min-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .boxes-grid{
     display: grid;
-    grid-template-columns: [first]110px [line2] 110px [end];
+    grid-template-columns: [first]100px [line2] 100px [end];
+    gap: 5px;
 }
 .company-box{
     width: 100px;
     height: 100px;
     border-radius: 5px;
     background-image: linear-gradient(rgb(0, 255, 255),rgba(0, 255, 255, 0.349),rgba(0, 255, 255, 0.103), rgba(255, 255, 0, 0));
+    border: cyan 5px solid;
+}
+.companies-box-nmae{
+    background-color: transparent;
+}
+@media (max-width:640px) {
+    .CountrySlide{
+        flex-wrap: wrap;
+    }
+    .desh{
+        width: 90%;
+    }
 }
