@@ -16,19 +16,67 @@ const CountrySlide = () => {
   }
   const Country = [
     {
-      title: "Austrila",
-      pic: <></>,
-      companies: ["Atlassian", "Westpac", "hello"],
+      title: "Australia",
+      companies: ["Atlassian", "Westpac", "Zip Co"],
     },
     {
       title: "USA",
-      pic: <></>,
-      companies: ["Wells Fargo", " JP morgan", "Goldman Sachs", "CITI bank"],
+      companies: ["Wells Fargo", "JP Morgan", "Goldman Sachs"],
     },
     {
       title: "India",
+      companies: ["HDFC Bank", "QuadEye", "Paytm"],
     },
+    {
+      title: "Argentina",   
+      companies: ["Mercado Pago", "Ualá", "Banco Santander Río"],
+    },
+    {
+      title: "Germany",
+      companies: ["Deutsche Bank", "N26", "Solarisbank"],
+    },
+    {
+      title: "Switzerland",
+      companies: ["Credit Suisse", "Aduno Group", "Lykke"],
+    },
+    {
+      title: "Italy",
+      companies: ["Intesa Sanpaolo", "Satispay", "MoneyFarm"],
+    },
+    {
+      title: "China",
+      companies: ["Ant Group (Alipay)", "JD Digits (Jingdong Digital)", "Lufax"],
+    },
+    {
+      title: "Japan",
+      companies: ["Rakuten Pay", "Toyota", "Money Forward"],
+    },
+    {
+      title: "Taiwan",
+      companies: ["KKBOX Pay", "E.SUN Bank (Fugle)", "Orient Securities (Wortai)"],
+    },
+    {
+      title: "Israel",
+      companies: ["Payoneer", "eToro", "Lemonade"],
+    },
+    {
+      title: "Sweden",
+      companies: ["Klarna", "Tink", "iZettle"],
+    },
+    {
+      title: "Austria",   
+      companies: ["George", "Bitpanda", "Raiffeisen Bank International" ],
+    },
+    {
+      title: "Canada",
+      companies: ["Wealthsimple", "Wave Financial", "KOHO"],
+    },
+    {
+      title: "Brazil",
+      companies: ["Nubank", "PagSeguro", "Itaú Unibanco"]
+    }
   ];
+
   return (
     <>
       <div className="CountrySlide">
