@@ -1,19 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: #3D6343;
-    background-color : #01171b;
-}
+
 .CountryPoint{
     background-color : #01171b;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 60vh;
 }
 .cp-content{
-    color:#3D6343;
+    color:cyan;
     margin: auto;
     margin-top: 5rem;
-    width: 80vw;
+    width: 60vw;
     /* background-color: #02353ebd; */
     /* height: 25rem; */
     border-radius: 2rem;

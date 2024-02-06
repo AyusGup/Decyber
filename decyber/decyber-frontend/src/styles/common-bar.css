@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: end;
+    text-align: start;
 }
 .mobile-button{
     display: none;
@@ -51,7 +51,8 @@ nav{
         flex-direction: column;
     }
     .nav-top-bar{
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
+        flex-wrap: wrap;
     }
 }

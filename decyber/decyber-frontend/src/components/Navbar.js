@@ -47,7 +47,7 @@ export default function Navbar(props) {
                 </sup>
               </Link>
             </div> */}
-          <div className="profile-Logout">
+          {/* <div className="profile-Logout">
             <div className="layoutItem">
               <Link className="nav-link active" to="/dashboard">
                 <svg
@@ -61,42 +61,42 @@ export default function Navbar(props) {
                   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                 </svg>
               </Link>
-            </div>
-            <div>
-              {!localStorage.getItem("token") ? (
-                <Link className="dropdown-item" to="/login">
-                  <button
-                    type="button"
-                    className="btn"
-                    style={{
-                      backgroundColor: "#212529",
-                      color: "cyan",
-                      fontSize: "5vh",
-                      fontWeight: "600",
-                    }}
-                  >
-                    Login
-                  </button>
-                </Link>
-              ) : (
-                <Link className="dropdown-item" to="/login">
-                  <button
-                    type="button"
-                    onClick={logoutHandler}
-                    className="btn"
-                    style={{
-                      backgroundColor: "#212529",
-                      color: "cyan",
-                      fontSize: "5vh",
-                      fontWeight: "600",
-                    }}
-                  >
-                    Logout
-                  </button>
-                </Link>
-              )}
-            </div>
+            </div> */}
+          <div>
+            {!localStorage.getItem("token") ? (
+              <Link className="dropdown-item" to="/login">
+                <button
+                  type="button"
+                  className="btn"
+                  style={{
+                    backgroundColor: "#212529",
+                    color: "cyan",
+                    fontSize: "5vh",
+                    fontWeight: "600",
+                  }}
+                >
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <Link className="dropdown-item" to="/login">
+                <button
+                  type="button"
+                  onClick={logoutHandler}
+                  className="btn"
+                  style={{
+                    backgroundColor: "#212529",
+                    color: "cyan",
+                    fontSize: "5vh",
+                    fontWeight: "600",
+                  }}
+                >
+                  Logout
+                </button>
+              </Link>
+            )}
           </div>
+          {/* </div> */}
           {/* </div> */}
         </div>
       </nav>
