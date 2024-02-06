@@ -61,7 +61,7 @@ const World = ({ armypoints }) => {
       ></path>
       <Link
         title="Argentina"
-        to={armypoints <= 70 ? "/" : "/cp/Argentina"}
+        to={armypoints <= 70 ? "/cp/Argentina" : "/cp/Argentina"}
         className={armypoints <= 70 ? "danger" : "capturable"}
       >
         <path

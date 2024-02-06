@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/CountrySlide.css";
 // import CountryBox from "./CountryBox";
 import { useParams } from "react-router-dom";
+// import Country from "Country.json";
 const CountrySlide = () => {
   const idx = useParams();
   console.log(idx);
