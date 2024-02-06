@@ -6,7 +6,9 @@ connectToMongo();
 const app = express()
 const port = 8000// bcoz 3000 pe humari react app chalegi
 
-app.use(cors());
+app.use(cors(
+  origin = ["http://localhost:3000"]
+));
 // MiddleWare (if you want to use req.body)
 app.use(express.json()); 
 

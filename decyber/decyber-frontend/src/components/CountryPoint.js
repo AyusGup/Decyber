@@ -61,7 +61,6 @@ const CountryPoint = (props) => {
 
   return (
     <>
-
       {!loader ? <div className="CountryPoint">
         <h1 style={{ textAlign: "center", margin: "1rem 0", color: "lightgreen" }}>{country}</h1>
         <div className='cp-content d-flex justify-content-center'>

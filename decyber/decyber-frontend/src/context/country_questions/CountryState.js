@@ -3,7 +3,7 @@ import CountryContext from "./countryContext";
 
 const CountryState = (props) => {
     // const host = "http://localhost:8000";
-    const host = "https://decyber-backend.vercel.app";
+    const host = "http://localhost:8000";
     const cpqItem = [{
         "type": 0,
         "code": "DEFAULT",
@@ -50,6 +50,7 @@ const CountryState = (props) => {
     // Check whether answer is correct or not from backend
     const checkcpq = async (code, ans) => {
         // API Call
+        console.log(ans);
         setLoader(true)
         let url = `${host}/api/cp_questions/checkCPQ`;
         const response = await fetch(url, {
