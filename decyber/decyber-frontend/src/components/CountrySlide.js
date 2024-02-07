@@ -76,7 +76,7 @@ const CountrySlide = () => {
       pic: "/image/switzerland.png"
     },
     {
-      title: "Italy",
+      title: "Sudan",
       // companies: ["Intesa Sanpaolo", "Satispay", "MoneyFarm"],
       companies: [
         { url: "/image/hdfc.png", name: "Intesa Sanpaolo" },
@@ -95,7 +95,7 @@ const CountrySlide = () => {
       pic: "/image/china.png"
     },
     {
-      title: "Japan",
+      title: "Spain",
       companies: ["Rakuten Pay", "Toyota", "Money Forward"],
       pic: "/image/japan.png"
     },
@@ -147,9 +147,12 @@ const CountrySlide = () => {
       pic: "/image/canada.png"
     },
     {
-      title: "Brazil",
-      companies: ["Nubank", "PagSeguro", "Itaú Unibanco"],
-      pic: "/image/brazil.png"
+      title: "Kazakhstan",
+      companies: [
+        { url: "/image/uipath.png", name: "UI Path" },
+        { url: "/image/databrick.png", name: "Databrick" },
+        { url: "/image/Telecom.png", name: "Telecom" },
+      ]
     },
   ];
 

@@ -36,6 +36,7 @@ export default function Dashboard({ time }) {
   }, []);
   return (
     <>
+    <h1 style={{text:"white"}}>hi hlsdflks</h1>
       {!loader ? (
         <div className="Dashboard">
           <div className="team-name-header">
@@ -46,7 +47,7 @@ export default function Dashboard({ time }) {
                 color: "lightgreen",
               }}
             >
-              {user.team_name}
+              hi you are mental{user.team_name}
             </h1>
           </div>
           <div className="dashboard-outlier d-flex justify-content-center align-items-center flex-wrap ">
