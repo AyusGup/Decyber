@@ -89,7 +89,7 @@ const CountrySlide = () => {
       title: "China",
       companies: [
         { url: "/image/hdfc.png", name: "Ant Group (Alipay)" },
-        { url: "/image/hdfc.png", name: "JD Digits (Jingdong Digital)" },
+        { url: "/image/hdfc.png", name: "JD Digits" },
         { url: "/image/hdfc.png", name: "Lufax" },
       ],
       pic: "/image/china.png"
@@ -106,7 +106,7 @@ const CountrySlide = () => {
         { url: "/image/E sun bank (Fugle).png", name: "E.SUN Bank (Fugle)" },
         {
           url: "/image/Orient_Securities.png",
-          name: "Orient Securities (Wortai)",
+          name: "Orient Securities",
         },
       ],
       pic: "/image/taiwan.png"
