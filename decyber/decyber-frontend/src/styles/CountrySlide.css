@@ -31,6 +31,14 @@
     background-image:  url("../../public/CountryBorder.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic-inside-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .companies-box{
     min-width: 50%;
