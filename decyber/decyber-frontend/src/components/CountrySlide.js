@@ -23,11 +23,7 @@ const CountrySlide = () => {
         { url: "/image/Westpac.png", name: "Westpac" },
         { url: "/image/Zip.png", name: "Zip Co" },
       ],
-      // pic: [
-      //   "/LOGO/logo/Logo_first_five/Atlassian.png",
-      //   "/LOGO/logo/Logo_first_five/Westpac.png",
-      //   "/LOGO/logo/Logo_first_five/Zip.png",
-      // ],
+      pic: "/image/australia.png"
     },
     {
       title: "USA",
@@ -37,6 +33,7 @@ const CountrySlide = () => {
         { url: "/image/JP-Morgan.png", name: "JP Morgan" },
         { url: "/image/goldman-sachs.png", name: "Goldman Sachs" },
       ],
+      pic: "/image/america.png"
     },
     {
       title: "India",
@@ -46,6 +43,7 @@ const CountrySlide = () => {
         { url: "/image/quad_eye.png", name: "QuadEye" },
         { url: "/image/Paytm.png", name: "Paytm" },
       ],
+      pic: "/image/india.png"
     },
     {
       title: "Argentina",
@@ -55,6 +53,7 @@ const CountrySlide = () => {
         { url: "/image/quad_eye.png", name: "Ualá" },
         { url: "/image/Paytm.png", name: "Banco Santander Río" },
       ],
+      pic: "/image/argentina.png"
     },
     {
       title: "Germany",
@@ -64,6 +63,7 @@ const CountrySlide = () => {
         { url: "/image/n26.png", name: "N26" },
         { url: "/image/Solarisbank.png", name: "Solarisbank" },
       ],
+      pic: "/image/germany.png"
     },
     {
       title: "Switzerland",
@@ -73,6 +73,7 @@ const CountrySlide = () => {
         { url: "/image/quad_eye.png", name: "Aduno Group" },
         { url: "/image/Paytm.png", name: "Lykke" },
       ],
+      pic: "/image/switzerland.png"
     },
     {
       title: "Italy",
@@ -82,6 +83,7 @@ const CountrySlide = () => {
         { url: "/image/quad_eye.png", name: "Satispay" },
         { url: "/image/Paytm.png", name: "MoneyFarm" },
       ],
+      pic: "/image/italy.png"
     },
     {
       title: "China",
@@ -90,10 +92,12 @@ const CountrySlide = () => {
         { url: "/image/hdfc.png", name: "JD Digits (Jingdong Digital)" },
         { url: "/image/hdfc.png", name: "Lufax" },
       ],
+      pic: "/image/china.png"
     },
     {
       title: "Japan",
       companies: ["Rakuten Pay", "Toyota", "Money Forward"],
+      pic: "/image/japan.png"
     },
     {
       title: "Taiwan",
@@ -105,6 +109,7 @@ const CountrySlide = () => {
           name: "Orient Securities (Wortai)",
         },
       ],
+      pic: "/image/taiwan.png"
     },
     {
       title: "Israel",
@@ -114,6 +119,7 @@ const CountrySlide = () => {
         { url: "/image/eToro.png", name: "eToro" },
         { url: "/image/Lemonade.png", name: "Lemonade" },
       ],
+      pic: "/image/israel.png"
     },
     {
       title: "Sweden",
@@ -123,10 +129,12 @@ const CountrySlide = () => {
         { url: "/image/TINK.png", name: "Tink" },
         { url: "/image/IZETTLE.png", name: "iZettle" },
       ],
+      pic: "/image/sweden.png"
     },
     {
       title: "Austria",
       companies: ["George", "Bitpanda", "Raiffeisen Bank International"],
+      pic: "/image/austria.png"
     },
     {
       title: "Canada",
@@ -136,10 +144,12 @@ const CountrySlide = () => {
         { url: "/image/WAVE Financial.png", name: "Wave Financial" },
         { url: "/image/KOHO.png", name: "KOHO" },
       ],
+      pic: "/image/canada.png"
     },
     {
       title: "Brazil",
       companies: ["Nubank", "PagSeguro", "Itaú Unibanco"],
+      pic: "/image/brazil.png"
     },
   ];
 
@@ -149,7 +159,9 @@ const CountrySlide = () => {
         <div className="desh">
           <div className="CountryName-title">{Country[i].title}</div>
           <div className="pic-border-box">
-            <div className="pic-inside-box">{Country[i].pic}</div>
+            <div className="pic-inside-box">
+            <img className="country-img" style={{"width":"250px"}} src={Country[i].pic} alt={Country[i].title} />
+            </div>
           </div>
         </div>
         <div className="companies-box">
