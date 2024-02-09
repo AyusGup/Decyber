@@ -41,7 +41,7 @@ const Sidebar = () => {
                 to="/memories"
                 style={{ color: "cyan", fontSize: "5vw", fontWeight: "600" }}
               >
-                Memories
+                Team
               </Link>
             </div>
           </div>
