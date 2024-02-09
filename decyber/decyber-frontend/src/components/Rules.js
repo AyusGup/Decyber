@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Rules() {
+    const ruleStyle = {
+        color: 'cyan' // Set text color to cyan
+      };
     return (
         <>
             <div className='container my-3'>
@@ -8,27 +11,50 @@ export default function Rules() {
             </div>
             <div className="container my-3">
                 <br />
-                <h5 style={{ color: "cyan" }}>
-                    1. There will be a single map which will be common for all the players.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    2. Players can capture countries by breaking their defense (1 question) and having the required army points.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    3. Capturing a country will award some country points, each country will have different points depending on the level of difficulty.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    4. However, capturing a country will reduce your army points.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    5. Teams will have to rebuild the army(army points) by solving an extra set of questions which will only consist of simple puzzles.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    6. Once a country is captured, it cannot be captured by any other teams.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    7. The team with the most country points at the end of the event will be declared the winner.
-                </h5>
+                <ol>
+        <li>
+          <strong style={ruleStyle}>Round 1: DeCyber Quiz Extravaganza</strong>
+          <ul>
+            <li style={ruleStyle}>Teams answer a series of traditional quiz questions.</li>
+            <li style={ruleStyle}>Correct answers contribute to the team's overall score.</li>
+            <li style={ruleStyle}>Incorrect answers result in no points being awarded.</li>
+            <li style={ruleStyle}>The round establishes an initial leaderboard.</li>
+          </ul>
+        </li>
+        <li>
+          <strong style={ruleStyle}>Round 2: DeCyber Multimedia Challenge</strong>
+          <ul>
+            <li style={ruleStyle}>Questions presented in various formats: audio, images, videos.</li>
+            <li style={ruleStyle}>Teams must adapt knowledge and quick-thinking skills.</li>
+            <li style={ruleStyle}>Points awarded for correct answers, with consequences for errors.</li>
+            <li style={ruleStyle}>Adds complexity with multimedia elements.</li>
+          </ul>
+        </li>
+        <li>
+          <strong style={ruleStyle}>Total Scores Calculation</strong>
+          <ul>
+            <li style={ruleStyle}>Cumulative scores from Rounds 1 and 2 are meticulously calculated.</li>
+            <li style={ruleStyle}>Teams with 0 score receive a buffer score to compete in further rounds.</li>
+          </ul>
+        </li>
+        <li>
+          <strong style={ruleStyle}>Round 3: DeCyber Capture the Company Challenge</strong>
+          <ul>
+            <li style={ruleStyle}>Teams compete to capture points by selecting companies.</li>
+            <li style={ruleStyle}>Each company's % share converted into corresponding points.</li>
+            <li style={ruleStyle}>Teams must strategically choose companies to pursue based on point totals.</li>
+            <li style={ruleStyle}>Challenge lies in diverse questions and limited time.</li>
+          </ul>
+        </li>
+        <li>
+          <strong style={ruleStyle}>Determining the DeCyber Champion</strong>
+          <ul>
+            <li style={ruleStyle}>Team with highest total points at the end of Round 3 wins.</li>
+            <li style={ruleStyle}>In case of a tie, the team with more correctly answered questions wins.</li>
+            <li style={ruleStyle}>Combines intellectual rigour and strategic prowess.</li>
+          </ul>
+        </li>
+      </ol>
             </div>
         </>
 
