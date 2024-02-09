@@ -5,7 +5,7 @@ export default function Memories() {
     return (
         <>
             <div className='container my-3'>
-                <h1 style={{ textAlign: "center", margin: "1rem 0", color: "cyan" }}>Memories</h1>
+                <h1 style={{ textAlign: "center", margin: "1rem 0", color: "cyan" }}>OUR TEAM</h1>
             </div>
             <div className="container my-3">
                 <h5 style={{ color: "cyan" }}>
@@ -35,22 +35,72 @@ export default function Memories() {
                     </div>
                     <div className="cards">
                         <div className="image_container">
-                            <img className="profile_photo" src="../SS12.JPG" alt="error" />
+                            <img className="profile_photo" src="/NISSAN.jpg" alt="error" />
                         </div>
                     </div>
                     <div className="cards">
                         <div className="image_container">
-                            <img className="profile_photo" src="../SS10.jpg" alt="error" />
+                            <img className="profile_photo" src="/aman.jpg" alt="error" />
                         </div>
                     </div>
                     <div className="cards">
                         <div className="image_container">
-                            <img className="profile_photo" src="../SS11.jpg" alt="error" />
+                            <img className="profile_photo" src="/CHARVI.jpg" alt="error" />
                         </div>
                     </div>
                     <div className="cards">
                         <div className="image_container">
-                            <img className="profile_photo" src="../SS4.png" alt="error" />
+                            <img className="profile_photo" src="/HARSHIT.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/SHIVAM.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/ADIT.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/AYUSH.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/ABHIMANYU.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/ADITYA.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/HARDIK.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/DIVYANSHU.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/AKSHAT_JINDAL.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/AYAN.jpg" alt="error" />
+                        </div>
+                    </div>
+                    <div className="cards">
+                        <div className="image_container">
+                            <img className="profile_photo" src="/ANSHUMAAN.jpg" alt="error" />
                         </div>
                     </div>
                 </div>
