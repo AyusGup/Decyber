@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import userContext from "./userContext";
 
 const UserState = (props) => {
-  // const host = "http://localhost:8000";
-  const host = "http://localhost:8000";
+  // const host = "https://decyber.onrender.com";
+  const host = "https://decyber.onrender.com";
   let userItem = [];
   const [user, setUser] = useState(userItem);
   const [loader, setLoader] = useState(false)

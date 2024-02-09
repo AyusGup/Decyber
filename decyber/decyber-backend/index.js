@@ -7,7 +7,7 @@ const app = express()
 const port = 8000// bcoz 3000 pe humari react app chalegi
 
 app.use(cors(
-  origin = ["http://localhost:3000"]
+  origin = ["http://localhost:3000", "https://decyber-seven.vercel.app"]
 ));
 // MiddleWare (if you want to use req.body)
 app.use(express.json()); 
