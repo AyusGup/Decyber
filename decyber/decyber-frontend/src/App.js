@@ -50,7 +50,7 @@ function App() {
                 <Navbar showAlert={showAlert} />
                 <div className="below-navcontent">
                   <Sidebar />
-                  <div className="sideContent">
+                  <div className="sideContent" style={{ overflow: 'hidden', overflowY: 'auto'  }}>
                     <Routes>
                       <Route exact path="/" element={<WorldMap />} />
                       <Route
