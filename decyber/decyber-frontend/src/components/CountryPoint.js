@@ -79,7 +79,7 @@ const CountryPoint = (props) => {
                 updatePoints({ ans: text, points: cpq[0].pts });
               }} >Submit</button>
             </div>
-          </div> : <div className='d-flex align-items-center' style={{ fontSize: '30px', backgroundColor: "transparent" }}><h5 className='question-pallete'>This country has been captured !</h5></div>}
+          </div> : <div className='d-flex align-items-center' style={{ fontSize: '30px', backgroundColor: "transparent" }}><h5 className='question-pallete'>This company has been captured !</h5></div>}
         </div>
       </div> : <div className="overlay">
         <div className="overlay__inner">
