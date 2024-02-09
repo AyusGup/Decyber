@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import CountryContext from "./countryContext";
 
 const CountryState = (props) => {
-    // const host = "http://localhost:8000";
-    const host = "http://localhost:8000";
+    // const host = "https://decyber.onrender.com";
+    const host = "https://decyber.onrender.com";
     const cpqItem = [{
         "type": 0,
         "code": "DEFAULT",
