@@ -16,7 +16,7 @@ const CountrySlide = () => {
     console.log(i);
   }
   const Country = [
-    {
+    { //0
       title: "Australia",
       companies: [
         { url: "/image/Atlassian.png", name: "Atlassian" },
@@ -25,7 +25,7 @@ const CountrySlide = () => {
       ],
       pic: "/image/australia.png"
     },
-    {
+    { //1
       title: "USA",
       // companies: ["Wells Fargo", "JP Morgan", "Goldman Sachs"],
       companies: [
@@ -33,9 +33,9 @@ const CountrySlide = () => {
         { url: "/image/JP-Morgan.png", name: "JP Morgan" },
         { url: "/image/goldman-sachs.png", name: "Goldman Sachs" },
       ],
-      pic: "/image/america.png"
+      pic: "/image/usa.png"
     },
-    {
+    { //2
       title: "India",
       // companies: ["HDFC Bank", "QuadEye", "Paytm"],
       companies: [
@@ -45,17 +45,17 @@ const CountrySlide = () => {
       ],
       pic: "/image/india.png"
     },
-    {
+    { //3
       title: "Argentina",
       // companies: ["Mercado Pago", "Ualá", "Banco Santander Río"],
       companies: [
-        { url: "/image/hdfc.png", name: "Mercado Pago" },
-        { url: "/image/quad_eye.png", name: "Ualá" },
-        { url: "/image/Paytm.png", name: "Banco Santander Río" },
+        { url: "/image/mercadoPago.png", name: "Mercado Pago" },
+        { url: "/image/Ualá.png", name: "Ualá" },
+        { url: "/image/Banco Santander Río.png", name: "Banco Santander Río" },
       ],
       pic: "/image/argentina.png"
     },
-    {
+    { // 4
       title: "Germany",
       // companies: ["Deutsche Bank", "N26", "Solarisbank"],
       companies: [
@@ -65,41 +65,45 @@ const CountrySlide = () => {
       ],
       pic: "/image/germany.png"
     },
-    {
+    { //5
       title: "Switzerland",
       // companies: ["Credit Suisse", "Aduno Group", "Lykke"],
       companies: [
-        { url: "/image/.png", name: "Credit Suisse" },
-        { url: "/image/quad_eye.png", name: "Aduno Group" },
-        { url: "/image/Paytm.png", name: "Lykke" },
+        { url: "/image/Credit Suisse.png", name: "Credit Suisse" },
+        { url: "/image/Aduno Group.png", name: "Aduno Group" },
+        { url: "/image/Lykke.png", name: "Lykke" },
       ],
       pic: "/image/switzerland.png"
     },
-    {
-      title: "Sudan",
+    { //6
+      title: "Italy",
       // companies: ["Intesa Sanpaolo", "Satispay", "MoneyFarm"],
       companies: [
-        { url: "/image/hdfc.png", name: "Intesa Sanpaolo" },
-        { url: "/image/quad_eye.png", name: "Satispay" },
-        { url: "/image/Paytm.png", name: "MoneyFarm" },
+        { url: "/image/intesa-sanpaolo-squarelogo.png", name: "Intesa Sanpaolo" },
+        { url: "/image/Satispay.jpeg", name: "Satispay" },
+        { url: "/image/MoneyFarm.png", name: "MoneyFarm" },
       ],
       pic: "/image/italy.png"
     },
-    {
+    { //7
       title: "China",
       companies: [
-        { url: "/image/hdfc.png", name: "Ant Group (Alipay)" },
-        { url: "/image/hdfc.png", name: "JD Digits" },
-        { url: "/image/hdfc.png", name: "Lufax" },
+        { url: "/image/Ant Group.png", name: "Ant Group (Alipay)" },
+        { url: "/image/JD Digits.png", name: "JD Digits" },
+        { url: "/image/Lufax.png", name: "Lufax" },
       ],
       pic: "/image/china.png"
     },
-    {
-      title: "Spain",
-      companies: ["Rakuten Pay", "Toyota", "Money Forward"],
+    { // 8
+      title: "Japan",
+      companies: [
+        { url: "/image/Rakuten Pay.png", name: "Rakuten Pay" },
+        { url: "/image/toyota.png", name: "toyota" },
+        { url: "/image/Money Forward.png", name: "Money Forward" },
+      ],
       pic: "/image/japan.png"
     },
-    {
+    { // 9
       title: "Taiwan",
       companies: [
         { url: "/image/KKBOX.png", name: "KKBOX Pay" },
@@ -109,19 +113,18 @@ const CountrySlide = () => {
           name: "Orient Securities",
         },
       ],
-      pic: "/image/taiwan.png"
+      pic: "/image/Taiwan.png"
     },
-    {
-      title: "Israel",
-      // companies: ["Payoneer", "eToro", "Lemonade"],
+    { // 10
+      title: "Russia",
       companies: [
-        { url: "/image/Payoneer.png", name: "Payoneer" },
-        { url: "/image/eToro.png", name: "eToro" },
-        { url: "/image/Lemonade.png", name: "Lemonade" },
+        { url: "/image/Gazprom.png", name: "Gazprom" },
+        { url: "/image/Lukoil.png", name: "Lukoil" },
+        { url: "/image/Sberbank.png", name: "Sberbank" },
       ],
-      pic: "/image/israel.png"
+      pic: "/image/russia.png"
     },
-    {
+    { //11
       title: "Sweden",
       // companies: ["Klarna", "Tink", "iZettle"],
       companies: [
@@ -131,12 +134,16 @@ const CountrySlide = () => {
       ],
       pic: "/image/sweden.png"
     },
-    {
+    { //12
       title: "Austria",
-      companies: ["George", "Bitpanda", "Raiffeisen Bank International"],
+      companies: [
+        { url: "/image/George.png", name: "George" },
+        { url: "/image/Bitpanda.png", name: "Bitpanda" },
+        { url: "/image/Raiffeisen Bank International.png", name: "Raiffeisen Bank International" },
+      ],
       pic: "/image/austria.png"
     },
-    {
+    { //13
       title: "Canada",
       // companies: ["Wealthsimple", "Wave Financial", "KOHO"],
       companies: [
@@ -146,13 +153,14 @@ const CountrySlide = () => {
       ],
       pic: "/image/canada.png"
     },
-    {
-      title: "Kazakhstan",
+    { //14
+      title: "Brazil",
       companies: [
-        { url: "/image/uipath.png", name: "UI Path" },
-        { url: "/image/databrick.png", name: "Databrick" },
-        { url: "/image/Telecom.png", name: "Telecom" },
-      ]
+        { url: "/image/Nubank.png", name: "Nubank" },
+        { url: "/image/PagSeguro.png", name: "PagSeguro" },
+        { url: "/image/Itaú Unibanco.png", name: "Itaú Unibanco" },
+      ],
+      pic: "/image/brazil.png"
     },
   ];
 
