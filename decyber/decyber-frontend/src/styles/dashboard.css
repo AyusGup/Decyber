@@ -19,7 +19,7 @@
 }
 
 .countries-board {
-    width: 30%;
+    width: 60%;
     height: 100%;
     overflow-y: scroll;
     margin-left: 2rem;
@@ -28,6 +28,12 @@
     display: flex;
     justify-content: center;
     padding-top: .5rem;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.countries-board::-webkit-scrollbar {
+    display: none;
 }
 
 .countries-board * {

@@ -53,7 +53,7 @@ router.post('/createUser', [
             team_member_2: req.body.team_member_2,
             team_member_2_email: req.body.team_member_2_email,
             team_member_2_college: req.body.team_member_2_college,
-            ap: 500
+            ap: 2925
         })
         const data = {//accessing data by using object id because it will be the fastest access
             user: {

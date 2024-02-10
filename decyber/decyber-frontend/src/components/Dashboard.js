@@ -7,36 +7,38 @@ import { useNavigate } from "react-router-dom";
 import scoreboardContext from "../context/scoreboard/scoreboardContext";
 
 export default function Dashboard({ time }) {
+  console.log(time);
   let navigate = useNavigate();
   const user_detail = useContext(userContext);
   const { user, loader, getUser } = user_detail;
   const scoreboard = useContext(scoreboardContext);
   const { usersScores, getScores } = scoreboard;
-  // const [usersScores, setusersScores] = useState([])
-  // const rankCalculator = () => {
-  //   setusersScores(() => {
-
-  //     return list;
-  //   });
-  // }
-  const myrank =
-    usersScores.length !== 0
-      ? usersScores.find((ele) => ele.team_name === user.team_name).rank
-      : 0;
+  
+  // useEffect should be called unconditionally
   useEffect(() => {
     if (!localStorage.getItem("token")) {
       navigate("/login");
-      //eslint-disable-next-line
     } else {
       getUser();
       getScores();
-      // rankCalculator();
-      //eslint-disable-next-line
     }
-  }, []);
+  }, []); // Empty dependency array to run the effect only once
+
+  // Check if user is undefined
+  if (!user || Object.keys(user).length === 0) {
+    // If user is not available yet, return null or a loading indicator
+    return null; // or loading indicator
+  }
+
+  // Now user object is available, proceed with rendering
+  
+  const myrank =
+    usersScores.length !== 0
+      ? usersScores.find((ele) => ele.team_name === user.team_name)?.rank || 0
+      : 0;
+
   return (
     <>
-    <h1 style={{text:"white"}}>hi hlsdflks</h1>
       {!loader ? (
         <div className="Dashboard">
           <div className="team-name-header">
@@ -47,7 +49,7 @@ export default function Dashboard({ time }) {
                 color: "lightgreen",
               }}
             >
-              hi you are mental{user.team_name}
+              Hi you are {user.team_name}
             </h1>
           </div>
           <div className="dashboard-outlier d-flex justify-content-center align-items-center flex-wrap ">
@@ -59,7 +61,7 @@ export default function Dashboard({ time }) {
                       <h4>{user.cp}</h4>
                     </div>
                   </div>
-                  <p>Your Country Points</p>
+                  <p>Your Total Shares</p>
                 </div>
 
                 <div className="army-points db-props">
@@ -68,13 +70,13 @@ export default function Dashboard({ time }) {
                       <h4>{user.ap}</h4>
                     </div>
                   </div>
-                  <p>Your Army Points</p>
+                  <p>Your Gold Value</p>
                 </div>
 
                 <div className="rank db-props">
                   <div className="rank-props">
                     <h4>
-                      {usersScores.length && myrank.toString()}
+                      {myrank.toString()}
                       {myrank !== 1
                         ? myrank !== 2
                           ? myrank !== 3
@@ -112,7 +114,20 @@ export default function Dashboard({ time }) {
                       </p>
                     </div>
                   </div>
-                </div>
+                  {user.team_member_2?
+                  <div className="member">
+                    <div className="avatar">
+                      <Avatar />
+                    </div>
+                    <div className="basic-info">
+                      <p className="name">{user.team_member_2}</p>
+                      <p className="designation">{user.team_member_2_email}</p>
+                      <p className="designation">
+                        {user.team_member_2_college}
+                      </p>
+                    </div>
+                  </div> : <></>}
+                </div> 
                 <div className="remaining-time">
                   <div className="timer">
                     <div className="timer-display">
@@ -138,7 +153,7 @@ export default function Dashboard({ time }) {
                     <tr>
                       <th>Countries</th>
                     </tr>
-                    {user.countries_captured.map((ele, index) => {
+                    {user.countries_captured && user.countries_captured.length && user.countries_captured.map((ele, index) => {
                       return (
                         <tr key={index}>
                           <td>{ele}</td>

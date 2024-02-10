@@ -33,7 +33,7 @@ function App() {
     }, 2000);
   };
   inject(); //from vercel analytics
-  const targetTime = new Date("2023/02/15 13:00:00");
+  const targetTime = new Date("2024/02/11 17:00:00");
   const currentTime = new Date();
   const time = new Date();
   time.setMilliseconds(targetTime - currentTime);

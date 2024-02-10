@@ -178,7 +178,7 @@ export default function About() {
             <div className="image_container">
               <img className="profile_photo" src="/HIMANSHU.jpg" alt="error" />
             </div>
-            <div className="member_name">Himanshu</div>
+            <div className="member_name">Himesh Goyal</div>
             <div className="desc">
               Student Coordinator, Mathematics and Computing Branch, 2nd Year
             </div>{" "}

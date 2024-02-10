@@ -34,16 +34,16 @@ const Sidebar = () => {
               </Link>
             </div>
 
-            {/* <div className="sidebar-items">
+            <div className="sidebar-items">
               <Link
                 className="nav-link active"
                 aria-current="page"
-                to="/memories"
+                to="/dashboard"
                 style={{ color: "cyan", fontSize: "5vw", fontWeight: "600" }}
               >
-                Team
+                User
               </Link>
-            </div> */}
+            </div>
             <div className="sidebar-items ">
               <Link
                 className="nav-link active"

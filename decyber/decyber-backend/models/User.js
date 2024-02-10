@@ -52,7 +52,7 @@ const UserSchema = new Schema({
     },
     ap: {
         type: Number,
-        default: 0
+        default:2925
     },
     cp: {
         type: Number,
