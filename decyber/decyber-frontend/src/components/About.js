@@ -12,14 +12,18 @@ export default function About() {
       <div className="container my-3">
         <h1 style={{ color: "cyan" }}>Description</h1>
         <h5 style={{ color: "cyan" }}>
+<<<<<<< HEAD
         Welcome to DeCyber, an intellectually stimulating and multimedia-rich competition designed
         to challenge and showcase the diverse talents of competing teams. This three-round event
         promises an exhilarating journey through trivia, multimedia puzzles, and strategic flag
         capturing.
+=======
+        Welcome to DeCyber, an intellectually stimulating and multimedia-rich competition designed to challenge and showcase the diverse talents of competing teams. This three-round event promises an exhilarating journey through trivia, multimedia puzzles, and strategic flag capturing.
+>>>>>>> d30ea038f7625feee329a3415285d20b66122f88
         </h5>
       </div>
       <br />
-      <div className="container my-3">
+      {/* <div className="container my-3">
         <h1 style={{ color: "cyan" }}>Game Flow</h1>
         <h5 style={{ color: "cyan" }}>
           1.Capturing questions can range from deciphering, problem solving,
@@ -34,7 +38,7 @@ export default function About() {
           3. The team with the most country points at the end of the event will
           be chosen as the winner.
         </h5>
-      </div>
+      </div> */}
       {/* Team Details and End Credits */}
       <div className="team">
         <br />
