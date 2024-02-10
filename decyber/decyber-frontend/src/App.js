@@ -53,11 +53,7 @@ function App() {
                   <div className="sideContent" style={{ overflow: 'hidden', overflowY: 'auto'  }}>
                     <Routes>
                       <Route exact path="/" element={<WorldMap />} />
-<<<<<<< HEAD
-                      {/* <Route
-=======
                      {/* <Route
->>>>>>> d30ea038f7625feee329a3415285d20b66122f88
                         exact
                         path="/ap"
                         element={<ArmyPoint showAlert={showAlert} />}
