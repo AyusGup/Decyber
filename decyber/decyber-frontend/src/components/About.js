@@ -12,30 +12,26 @@ export default function About() {
       <div className="container my-3">
         <h1 style={{ color: "cyan" }}>Description</h1>
         <h5 style={{ color: "cyan" }}>
-          World war 3 is not just a war of nuclear weapons, it’s a cyber war as
-          well. You are fighting for your nation team name. Help your soldiers
-          win the war by neutralizing opposition communications and weapons by
-          decrypting their passwords in the form of questions and getting your
-          hold on them.
+        Welcome to DeCyber, an intellectually stimulating and multimedia-rich competition designed
+        to challenge and showcase the diverse talents of competing teams. This three-round event
+        promises an exhilarating journey through trivia, multimedia puzzles, and strategic flag
+        capturing.
         </h5>
       </div>
       <br />
       <div className="container my-3">
         <h1 style={{ color: "cyan" }}>Game Flow</h1>
         <h5 style={{ color: "cyan" }}>
-          1. Army related questions will only consist of simple puzzles.
-        </h5>
-        <h5 style={{ color: "cyan" }}>
-          2.Capturing questions can range from deciphering, problem solving,
+          1.Capturing questions can range from deciphering, problem solving,
           decoding,riddles,puzzles,etc. The difficulty of the questions would be
           from easy to moderate.
         </h5>
         <h5 style={{ color: "cyan" }}>
-          3. All the teams will be given access to all country related questions
+          2. All the teams will be given access to all country related questions
           at the start of the event, so there won’t be any levels.
         </h5>
         <h5 style={{ color: "cyan" }}>
-          4. The team with the most country points at the end of the event will
+          3. The team with the most country points at the end of the event will
           be chosen as the winner.
         </h5>
       </div>
@@ -51,20 +47,47 @@ export default function About() {
         <div className="subteam">
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../nikhil.jpg" alt="error" />
+              <img className="profile_photo" src="/NISSAN.jpg" alt="error" />
             </div>
-            <div className="member_name">Nikhil Gupta</div>
+            <div className="member_name">Nissan Kumar</div>
             <div className="desc">
-              Mathematics and Computing Branch, 3rd Year
+              President, Mathematics and Computing Branch, 3rd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../keshav.jpg" alt="error" />
+              <img className="profile_photo" src="/aman.jpg" alt="error" />
             </div>
-            <div className="member_name">Keshav</div>
+            <div className="member_name">Aman Gupta</div>
             <div className="desc">
-              Mechanical Engineering Branch, 3rd Year
+              Vice President, Software Engineering Branch, 3rd Year
+            </div>{" "}
+          </div>
+          <div className="cards">
+            <div className="image_container">
+              <img className="profile_photo" src="/CHARVI.jpg" alt="error" />
+            </div>
+            <div className="member_name">Charvi Solanki</div>
+            <div className="desc">
+              Vice President, Mathematics and Computing Branch, 3rd Year
+            </div>{" "}
+          </div>
+          <div className="cards">
+            <div className="image_container">
+              <img className="profile_photo" src="/HARShiT.jpg" alt="error" />
+            </div>
+            <div className="member_name">Harshit Khurana</div>
+            <div className="desc">
+              Head Of Operations , Mathematics and Computing Branch, 3rd Year
+            </div>{" "}
+          </div>
+          <div className="cards">
+            <div className="image_container">
+              <img className="profile_photo" src="/SHIVAM.jpg" alt="error" />
+            </div>
+            <div className="member_name">Shivam Mittal</div>
+            <div className="desc">
+              Research Head, Mathematics and Computing Branch, 3rd Year
             </div>{" "}
           </div>
         </div>
@@ -76,20 +99,29 @@ export default function About() {
         <div className="subteam">
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../aman.jpg" alt="error" />
+              <img className="profile_photo" src="/AYUSH.jpg" alt="error" />
             </div>
-            <div className="member_name">Aman Gupta</div>
+            <div className="member_name">Ayush Gupta</div>
             <div className="desc">
-              Software Engineering Branch, 2nd Year
+              Technical head, Computer Engineering Branch, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../user.jpg" alt="error" />
+              <img className="profile_photo" src="/ABHIMANYU.jpg" alt="error" />
             </div>
-            <div className="member_name">Aditya Mishra</div>
+            <div className="member_name">Abhimanyu Kumar</div>
             <div className="desc">
-              Mathematics and Computing Branch, 2nd Year
+              Content head, Computer Engineering Branch, 2nd Year
+            </div>{" "}
+          </div>
+          <div className="cards">
+            <div className="image_container">
+              <img className="profile_photo" src="/HARDIK.jpg" alt="error" />
+            </div>
+            <div className="member_name">Hardik Garg</div>
+            <div className="desc">
+              Student Coordinator, Computer Engineering Branch, 2nd Year
             </div>{" "}
           </div>
         </div>
@@ -99,56 +131,56 @@ export default function About() {
         <div className="subteam">
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../user.jpg" alt="error" />
+              <img className="profile_photo" src="/ADITYA.jpg" alt="error" />
             </div>
-            <div className="member_name">Nissan</div>
+            <div className="member_name">Aditya Pratap Singh</div>
             <div className="desc">
-              Mathematics and Computing Branch, 2nd Year
+              Technical head, Computer Engineering Branch, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../user.jpg" alt="error" />
+              <img className="profile_photo" src="/ADIT.jpg" alt="error" />
             </div>
-            <div className="member_name">Shivam</div>
+            <div className="member_name">Adit Gupta</div>
             <div className="desc">
-              Mathematics and Computing Branch, 2nd Year
+              Joint Secretary, Computer Engineering Branch, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../user.jpg" alt="error" />
+              <img className="profile_photo" src="/DIVYANSHU.jpg" alt="error" />
             </div>
-            <div className="member_name">Sanyam</div>
+            <div className="member_name">Divyanshu Bansal</div>
             <div className="desc">
-              Mathematics and Computing Branch, 2nd Year
+              Ml head, Mathematics and Computing Branch, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../kurush.jpg" alt="error" />
+              <img className="profile_photo" src="/AYAN.jpg" alt="error" />
             </div>
-            <div className="member_name">Kurush</div>
+            <div className="member_name">Ayan</div>
             <div className="desc">
-              Electronics and Communication Engineering Branch, 2nd Year
+              Design head, Computer Engineering Branch, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../vansh.jpg" alt="error" />
+              <img className="profile_photo" src="/ANSHUMAAN.jpg" alt="error" />
             </div>
-            <div className="member_name">Vansh</div>
+            <div className="member_name">Anshumaan</div>
             <div className="desc">
-              Electrical Engineering Branch, 2nd Year
+              Design head, Computer Engineering Branch, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="../prerna.jpg" alt="error" />
+              <img className="profile_photo" src="/HIMANSHU.jpg" alt="error" />
             </div>
-            <div className="member_name">Prerna</div>
+            <div className="member_name">Himanshu</div>
             <div className="desc">
-              Computer Engineering Branch, 2nd Year
+              Student Coordinator, Mathematics and Computing Branch, 2nd Year
             </div>{" "}
           </div>
         </div>

@@ -34,7 +34,7 @@ const Sidebar = () => {
               </Link>
             </div>
 
-            <div className="sidebar-items">
+            {/* <div className="sidebar-items">
               <Link
                 className="nav-link active"
                 aria-current="page"
@@ -43,9 +43,7 @@ const Sidebar = () => {
               >
                 Team
               </Link>
-            </div>
-          </div>
-          <div>
+            </div> */}
             <div className="sidebar-items ">
               <Link
                 className="nav-link active"

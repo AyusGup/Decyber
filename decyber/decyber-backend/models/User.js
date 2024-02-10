@@ -37,6 +37,19 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    team_member_2: {
+        type: String,
+        required: true
+    },
+    team_member_2_email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    team_member_2_college: {
+        type: String,
+        required: true
+    },
     ap: {
         type: Number,
         default: 0

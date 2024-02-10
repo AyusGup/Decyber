@@ -9,25 +9,43 @@ export default function Rules() {
             <div className="container my-3">
                 <br />
                 <h5 style={{ color: "cyan" }}>
-                    1. There will be a single map which will be common for all the players.
+                <p style={{fontWeight: "bold"}}>Round 1: DeCyber Quiz Extravaganza</p>
+                In the initial round, teams will engage in a traditional quiz format, answering a series of
+                questions to accumulate points. Correct responses will contribute to their overall score, while
+                incorrect answers result in no points being awarded. This segment sets the foundation for the
+                subsequent rounds and establishes an initial leaderboard.
                 </h5>
                 <h5 style={{ color: "cyan" }}>
-                    2. Players can capture countries by breaking their defense (1 question) and having the required army points.
+                <p style={{fontWeight: "bold"}}>Round 2: DeCyber Multimedia Challenge</p>
+                Building on the foundation laid in Round 1, the second round introduces a dynamic
+                multimedia element. Questions will be presented in various formats, including audio, images,
+                and videos. Teams must adapt their knowledge and quick-thinking skills to respond
+                accurately, earning points for correct answers and facing the consequences of errors. The
+                multimedia dimension adds an extra layer of complexity, making this round both visually
+                engaging and mentally demanding.
+                </h5>
+                <br />
+                <h5 style={{ color: "cyan" }}>
+                Total Scores Calculation
+                After the completion of the first two rounds, the cumulative scores of each team will be
+                meticulously calculated after some modifications and recorded. The teams with 0 score in
+                the first 2 round will recieve some buffer score so as to try to compete in the further rounds.
+                The competitive spirit intensifies as teams position themselves for the ultimate challenge in
+                the final round.
                 </h5>
                 <h5 style={{ color: "cyan" }}>
-                    3. Capturing a country will award some country points, each country will have different points depending on the level of difficulty.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    4. However, capturing a country will reduce your army points.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    5. Teams will have to rebuild the army(army points) by solving an extra set of questions which will only consist of simple puzzles.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    6. Once a country is captured, it cannot be captured by any other teams.
-                </h5>
-                <h5 style={{ color: "cyan" }}>
-                    7. The team with the most country points at the end of the event will be declared the winner.
+                <p style={{fontWeight: "bold"}}>Round 3: Final War</p>DeCyber Capture the Company Challenge
+                The climax of DeCyber unfolds in the captivating Capture the Company Challenge. Teams
+                will compete to capture valuable points by strategically selecting companies aligned with
+                their accumulated scores. Each question carries a unique point value which is determined by
+                converting the given % share of the company into corresponding points, and teams must
+                decide which company to pursue based on their point totals as any team can challenge for a
+                question which is less than or equal to that question's point value . The challenge lies in both
+                the diversity of questions and the limited time available. Teams can ascend the leaderboard or
+                face the risk of falling behind as they strive to outsmart their opponents.
+                The companies will be hidden under their respective countries of establishment and hovering
+                over each country will give us a list of companies and their current status of being occupied
+                or not occupied.
                 </h5>
             </div>
         </>

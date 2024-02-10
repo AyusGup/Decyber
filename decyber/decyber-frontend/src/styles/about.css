@@ -15,8 +15,8 @@
 
 .cards {
     margin: 45px;
-    width: 300px;
-    height: auto;
+    width: 350px;
+    height: fit-content;
     border: 2px solid cyan;
 }
 
@@ -36,6 +36,7 @@
 .profile_photo {
     width: 100%;
     height: auto;
+    max-height: 300px;
 }
 
 .member_name {

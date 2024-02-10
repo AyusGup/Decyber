@@ -53,11 +53,11 @@ function App() {
                   <div className="sideContent">
                     <Routes>
                       <Route exact path="/" element={<WorldMap />} />
-                      <Route
+                      {/* <Route
                         exact
                         path="/ap"
                         element={<ArmyPoint showAlert={showAlert} />}
-                      />
+                      /> */}
                       <Route
                         exact
                         path="/CountrySlide/:idx"
@@ -89,6 +89,11 @@ function App() {
                       <Route
                         exact
                         path="/signup"
+                        element={<Signup showAlert={showAlert} />}
+                      />
+                      <Route
+                        exact
+                        path="/*"
                         element={<Signup showAlert={showAlert} />}
                       />
                     </Routes>
