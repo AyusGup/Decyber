@@ -18,15 +18,19 @@ router.post('/createUser', [
     body('team_password', 'Password must be atleast 5 characters').isLength({ min: 5 }),
     body('team_leader', 'Enter a valid name').isLength({ min: 3 }),
     body('team_leader_email', 'Enter a valid email').isEmail(),
+    body('team_leader_contact', 'Enter a valid contact').isMobilePhone(),
     body('team_leader_college', 'College must be atleast 3 characters').isLength({ min: 3 }),
     body('team_member_1', 'Enter a valid name').isLength({ min: 3 }),
     body('team_member_1_email', 'Enter a valid email').isEmail(),
+    body('team_member_1_contact', 'Enter a valid contact').isMobilePhone(),
     body('team_member_1_college', 'College must be atleast 3 characters').isLength({ min: 3 }),
     body('team_member_2', 'Enter a valid name').isLength({ min: 3 }),
     body('team_member_2_email', 'Enter a valid email').isEmail(),
+    body('team_member_2_contact', 'Enter a valid contact').isMobilePhone(),
     body('team_member_2_college', 'College must be atleast 3 characters').isLength({ min: 3 }),
 ], async (req, res) => {
     // Finds the validation errors in this request and wraps them in an object with handy functions
+    console.log(req.body);
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
@@ -49,9 +53,11 @@ router.post('/createUser', [
             team_leader_college: req.body.team_leader_college,
             team_member_1: req.body.team_member_1,
             team_member_1_email: req.body.team_member_1_email,
+            team_member_1_contact: req.body.team_member_1_contact,
             team_member_1_college: req.body.team_member_1_college,
             team_member_2: req.body.team_member_2,
             team_member_2_email: req.body.team_member_2_email,
+            team_member_2_contact: req.body.team_member_2_contact,
             team_member_2_college: req.body.team_member_2_college,
             ap: 2925
         })

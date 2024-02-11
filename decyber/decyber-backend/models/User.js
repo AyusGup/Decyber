@@ -33,6 +33,11 @@ const UserSchema = new Schema({
         required: true,
         unique: true
     },
+    team_member_1_contact: {
+        type: String,
+        required: true,
+        unique: true
+    },
     team_member_1_college: {
         type: String,
         required: true
@@ -43,7 +48,10 @@ const UserSchema = new Schema({
     },
     team_member_2_email: {
         type: String,
-        required: true,
+        unique: true
+    },
+    team_member_2_contact: {
+        type: String,
         unique: true
     },
     team_member_2_college: {

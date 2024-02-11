@@ -99,6 +99,7 @@ export default function Dashboard({ time }) {
                     <div className="basic-info">
                       <p className="name">{user.team_leader}</p>
                       <p className="designation">{user.team_leader_email}</p>
+                      <p className="designation">{user.team_leader_contact}</p>
                       <p className="designation">{user.team_leader_college}</p>
                     </div>
                   </div>
@@ -109,6 +110,7 @@ export default function Dashboard({ time }) {
                     <div className="basic-info">
                       <p className="name">{user.team_member_1}</p>
                       <p className="designation">{user.team_member_1_email}</p>
+                      <p className="designation">{user.team_member_1_contact}</p>
                       <p className="designation">
                         {user.team_member_1_college}
                       </p>
@@ -122,6 +124,7 @@ export default function Dashboard({ time }) {
                     <div className="basic-info">
                       <p className="name">{user.team_member_2}</p>
                       <p className="designation">{user.team_member_2_email}</p>
+                      <p className="designation">{user.team_member_2_contact}</p>
                       <p className="designation">
                         {user.team_member_2_college}
                       </p>

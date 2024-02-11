@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function Signup(props) {
     let navigate = useNavigate();
-    const [credentials, setCredentials] = useState({ team_name: "", team_password: "", team_leader: "", team_leader_email: "", team_leader_college: "", team_member_1: "", team_member_1_email: "", team_member_1_college: "",team_member_2: "", team_member_2_email: "", team_member_2_college: "" });
+    const [credentials, setCredentials] = useState({ team_name: "", team_password: "", team_leader: "", team_leader_email: "", team_leader_college: "", team_member_1: "", team_member_1_email: "",team_member_1_contact: "", team_member_1_college: "",team_member_2: "", team_member_2_email: "",team_member_2_contact: "", team_member_2_college: "" });
     const [loader, setLoader] = useState(false)
 
     const onChange = (e) => {
@@ -15,13 +15,13 @@ export default function Signup(props) {
         e.preventDefault();
         setLoader(true)
         console.log(credentials);
-        // const response = await fetch("https://decyber.onrender.com/api/auth/createUser", {
-        const response = await fetch("https://decyber.onrender.com/api/auth/createUser", {
+        // const response = await fetch("http://localhost:8000/api/auth/createUser", {
+        const response = await fetch("http://localhost:8000/api/auth/createUser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ team_name: credentials.team_name, team_password: credentials.team_password, team_leader: credentials.team_leader, team_leader_email: credentials.team_leader_email, team_leader_college: credentials.team_leader_college, team_member_1: credentials.team_member_1, team_member_1_email: credentials.team_member_1_email, team_member_1_college: credentials.team_member_1_college, team_member_2: credentials.team_member_2, team_member_2_email: credentials.team_member_2_email, team_member_2_college: credentials.team_member_2_college })//will convert the object into type JSON
+            body: JSON.stringify({ team_name: credentials.team_name, team_password: credentials.team_password, team_leader: credentials.team_leader, team_leader_email: credentials.team_leader_email,team_leader_contact: credentials.team_leader_contact, team_leader_college: credentials.team_leader_college, team_member_1: credentials.team_member_1, team_member_1_email: credentials.team_member_1_email, team_member_1_contact: credentials.team_member_1_contact, team_member_1_college: credentials.team_member_1_college, team_member_2: credentials.team_member_2, team_member_2_email: credentials.team_member_2_email,team_member_2_contact: credentials.team_member_2_contact, team_member_2_college: credentials.team_member_2_college })//will convert the object into type JSON
         });
         const json = await response.json();
         setLoader(false)
@@ -64,6 +64,11 @@ export default function Signup(props) {
                                 <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
+                                <label htmlFor="exampleInputEmail1" className="form-label"><h5>Contact</h5></label>
+                                <input type="tel" className="form-control" name="team_leader_contact" id="team_leader_email" aria-describedby="emailHelp" value={credentials.team_leader_contact} onChange={onChange} />
+                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                            </div>
+                            <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label"><h5>College</h5></label>
                                 <input type="college" className="form-control" name="team_leader_college" id="team_leader_college" value={credentials.team_leader_college} onChange={onChange} />
                             </div>
@@ -81,6 +86,11 @@ export default function Signup(props) {
                                 <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
+                                <label htmlFor="exampleInputEmail1" className="form-label"><h5>Contact</h5></label>
+                                <input type="tel" className="form-control" name="team_member_1_contact" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_1_contact} onChange={onChange} />
+                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                            </div>
+                            <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label"><h5>College</h5></label>
                                 <input type="college" className="form-control" name="team_member_1_college" id="team_member_1_college" value={credentials.team_member_1_college} onChange={onChange} />
                             </div>
@@ -95,6 +105,11 @@ export default function Signup(props) {
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Email address</h5></label>
                                 <input type="email" className="form-control" name="team_member_2_email" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_2_email} onChange={onChange} />
                                 <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="exampleInputEmail1" className="form-label"><h5>Contact</h5></label>
+                                <input type="tel" className="form-control" name="team_member_2_contact" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_2_contact} onChange={onChange} />
+                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label"><h5>College</h5></label>
