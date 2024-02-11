@@ -15,9 +15,9 @@ export default function Login(props) {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        // const response = await fetch("https://decyber.onrender.com/ api/auth/login", {
+        // const response = await fetch("https://decyber.onrender.com/api/auth/login", {
         setLoader(true);
-        const response = await fetch("https://decyber.onrender.com/ api/auth/login", {
+        const response = await fetch("https://decyber.onrender.com/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

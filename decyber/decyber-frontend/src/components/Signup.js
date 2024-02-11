@@ -15,8 +15,8 @@ export default function Signup(props) {
         e.preventDefault();
         setLoader(true)
         console.log(credentials);
-        // const response = await fetch("https://decyber.onrender.com/ api/auth/createUser", {
-        const response = await fetch("https://decyber.onrender.com/ api/auth/createUser", {
+        // const response = await fetch("https://decyber.onrender.com/api/auth/createUser", {
+        const response = await fetch("https://decyber.onrender.com/api/auth/createUser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
