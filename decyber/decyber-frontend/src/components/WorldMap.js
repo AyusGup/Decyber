@@ -27,7 +27,7 @@ const WorldMap = () => {
   useEffect(() => {
     const currentTime = new Date();
     const goalTime = new Date(currentTime);
-    goalTime.setHours(17, 0, 0, 0); // Set to today 23:54
+    goalTime.setHours(0, 0, 0, 0); // Set to today 23:54
 
     const timeDifference = goalTime.getTime() - currentTime.getTime();
     if (timeDifference > 0) {
