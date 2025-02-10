@@ -31,10 +31,14 @@ router.post('/createUser', [
 ], async (req, res) => {
     // Finds the validation errors in this request and wraps them in an object with handy functions
     console.log(req.body);
+    console.log("He1");
     const errors = validationResult(req);
+    console.log("He2");
     if (!errors.isEmpty()) {
+        console.log(errors);
         return res.status(400).json({ errors: errors.array() });
     }
+    console.log("He3");
     // Check whether the team already exists
     try {
         let success = false;
@@ -44,6 +48,7 @@ router.post('/createUser', [
         }
         const salt = await bcrypt.genSalt(10);
         const secured_password = await bcrypt.hash(req.body.team_password, salt);
+        console.log("Ha1");
         // Create a new user
         user = await User.create({
             team_name: req.body.team_name,
@@ -61,14 +66,17 @@ router.post('/createUser', [
             team_member_2_college: req.body.team_member_2_college,
             ap: 2925
         })
+        console.log("Ha2");
         const data = {//accessing data by using object id because it will be the fastest access
             user: {
                 id: user.id
             }
         }
+        console.log("Ha3");
         success = true;
         const auth_token = jwt.sign(data, JWT_Secret);
         res.json({ success, auth_token });
+        console.log("Ha4");
 
 
     } catch (error) {
