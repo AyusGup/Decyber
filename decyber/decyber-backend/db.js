@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 //___MongoDb_Atlas___//
 require('dotenv').config();
 const connectToMongo = async () => {
-    mongoose.connect(process.env.MONGO_URI).then(() => {
+    mongoose.connect("mongodb+srv://decyber:dd110206@cluster0.gt7ox.mongodb.net/").then(() => {
         console.log("Connected to Mongo Successfuly");
     }).catch((err) => console.log(err));
 }
