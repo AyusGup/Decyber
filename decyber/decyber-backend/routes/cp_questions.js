@@ -7,9 +7,12 @@ const Country_questions = require('../models/Country_questions');
 // Route 1 : Get all the Country_questions using : GET "/api/cp_questions/fetchcp_question". Login required
 router.get('/fetchcp_question/:country', fetch_user, async (req, res) => {
     try {
+        console.log("fetchcp starts");
         const country_question = await Country_questions.find({ name: req.params.country }).select("-ans");
         res.json(country_question);
+        console.log("Country Question fetched");
     } catch (error) {
+        console.log("fetchcp starts");
         console.error(error.message);
         res.status(500).send("Internal Server Error");
     }
@@ -19,6 +22,7 @@ router.get('/fetchsinglecp_question/:country', fetch_user, async (req, res) => {
     try {
         const country_question = await Country_questions.find({ name: req.params.country }).select("-ans");
         res.json(country_question);
+        console.log("Country Question fetched");
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Internal Server Error");
