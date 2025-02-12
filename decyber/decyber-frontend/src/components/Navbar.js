@@ -17,9 +17,9 @@ export default function Navbar(props) {
           <img
             src="../decyber.png"
             alt="DeCyber"
-            width="400"
-            height="160"
-            className="d-inline-block align-text-top"
+            height="100"
+            style={{ paddingLeft: "50px" }}
+            className="d-inline-block align-text-top "
           />
           {/* <img src="../invictus.png" alt="DeCyber" width="120" height="50" className="d-inline-block align-text-top" /> */}
         </Link>

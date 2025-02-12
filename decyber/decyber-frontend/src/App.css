@@ -3,6 +3,97 @@
 }
 
 /* Image Guesser CSS */
+.grid-game-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.play-button {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.play-button:hover {
+  background-color: #e69500;
+}
+
+.score-timer-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.grid-box {
+  width: 80px;
+  height: 80px;
+  background-color: #f7d639;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+.grid-box.unlocked {
+  background-color: #ffeb3b;
+}
+
+.grid-box.correct {
+  background-color: #4CAF50;
+  color: white;
+  pointer-events: none;
+}
+
+.clue-container {
+  margin-top: 20px;
+}
+
+.input-answer {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.game-over-container {
+  margin-top: 20px;
+  font-size: 24px;
+  color: red;
+}
+
+.next-button {
+  background-color: #212529;
+  color: cyan;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.next-button:hover {
+  background-color: #333;
+}
 
 .image-guesser-container {
   display: flex;

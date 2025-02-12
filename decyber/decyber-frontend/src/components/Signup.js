@@ -28,7 +28,7 @@ export default function Signup(props) {
         if (json.success) {
             //save the auth token and redirect
             localStorage.setItem('token', json.auth_token);
-            navigate("/");
+            navigate("/round2");
         }
         else {
             props.showAlert("danger", "Some Error Occured");

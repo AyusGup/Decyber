@@ -23,6 +23,7 @@ import Round2 from "./components/Round2";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ImageGuesser from "./components/ImageGuesser";
 import Grid from "./components/Grid";
+import ThankYou from "./components/ThankYou";
 function App() {
   const [alert, setAlert] = useState(null);
   const showAlert = (type, display) => {
@@ -101,6 +102,7 @@ function App() {
                       <Route exact path="/round2" element={<Round2 />} />
                       <Route exact path="/imageguesser" element={<ImageGuesser />} />
                       <Route exact path="/grid" element={<Grid />} />
+                      <Route exact path="/thank-you" element={<ThankYou/>} />
                     </Routes>
                   </div>
                 </div>

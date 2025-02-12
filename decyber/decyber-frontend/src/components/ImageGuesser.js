@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 const path = "../../public/";
 const images = [
     // Replace with actual image file paths
-    "image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg",
-    "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg",
-    "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg",
-    "image16.jpg", "image17.jpg", "image18.jpg", "image19.jpg", "image20.jpg"
+    "image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"
+    
 ];
 for(let i in images){
     i=path+i;
@@ -14,13 +13,10 @@ for(let i in images){
 
 const answers = [
     // Replace with actual correct answers for each image
-    "stree 2", "phir aayi hasseen dilruba", "ctrl", "raanjhanaa", "answer5",
-    "answer6", "answer7", "answer8", "answer9", "answer10",
-    "answer11", "answer12", "answer13", "answer14", "answer15",
-    "answer16", "answer17", "answer18", "answer19", "answer20"
+    "stree 2", "phir aayi hasseen dilruba", "ctrl", "raanjhanaa"
 ];
-
 const ImageGuesser = ({ timeLimit = 1800 }) => {
+    const navigate = useNavigate();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userInput, setUserInput] = useState("");
     const [score, setScore] = useState(parseInt(localStorage.getItem("score")) || 0);
@@ -42,13 +38,18 @@ const ImageGuesser = ({ timeLimit = 1800 }) => {
                 });
             }, 1000);
             return () => clearInterval(timer);
+        } else {
+            navigate("/thank-you");
         }
-    }, [timeLeft]);
+    }, [timeLeft, navigate]);
 
     useEffect(() => {
         localStorage.setItem("score", score);
         localStorage.setItem("answeredQuestions", JSON.stringify(answeredQuestions));
-    }, [score, answeredQuestions]);
+        if (Object.keys(answeredQuestions).length === images.length) {
+            navigate("/thank-you");
+        }
+    }, [score, answeredQuestions, navigate]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -88,7 +89,7 @@ const ImageGuesser = ({ timeLimit = 1800 }) => {
         setCurrentIndex(index);
         setMessage("");
     };
-
+console.log(localStorage.getItem("answeredQuestions"));
     return (
         <div className="image-guesser-container">
             <h1>Image Guesser - Round 2</h1>
@@ -126,6 +127,5 @@ const ImageGuesser = ({ timeLimit = 1800 }) => {
         </div>
     );
 };
-
  
 export default ImageGuesser;

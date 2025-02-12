@@ -30,7 +30,7 @@ export default function Login(props) {
             props.showAlert("success", "Login Successful");
             //save the auth token and redirect
             localStorage.setItem('token', json.auth_token);
-            navigate("/");
+            navigate("/round2");
         }
         else {
             props.showAlert("danger", "Invalid Credentials");
