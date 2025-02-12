@@ -19,8 +19,10 @@ import React, { useState } from "react";
 import Leaderboard from "./components/Leaderboard";
 import Sidebar from "./components/Sidebar";
 import CountrySlide from "./components/CountrySlide";
+import Round2 from "./components/Round2";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import ImageGuesser from "./components/ImageGuesser";
+import Grid from "./components/Grid";
 function App() {
   const [alert, setAlert] = useState(null);
   const showAlert = (type, display) => {
@@ -33,7 +35,7 @@ function App() {
     }, 2000);
   };
   inject(); //from vercel analytics
-  const targetTime = new Date("2024/02/11 17:10:00");
+  const targetTime = new Date("2025/02/15 17:10:00"); //yaha apni ichha se date na daalein, event ko follow karein pls, warna aditya bhaiya fukc karenge apko
   const currentTime = new Date();
   const time = new Date();
   time.setMilliseconds(targetTime - currentTime);
@@ -96,6 +98,9 @@ function App() {
                         path="/*"
                         element={<Signup showAlert={showAlert} />}
                       />
+                      <Route exact path="/round2" element={<Round2 />} />
+                      <Route exact path="/imageguesser" element={<ImageGuesser />} />
+                      <Route exact path="/grid" element={<Grid />} />
                     </Routes>
                   </div>
                 </div>

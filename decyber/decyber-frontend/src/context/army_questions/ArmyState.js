@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import ArmyContext from "./armyContext";
 
 const ArmyState = (props) => {
-    // const host = "https://decyber.onrender.com";
-    const host = "https://decyber.onrender.com";
+    // const host = "http://localhost:8000/";
+    const host = "http://localhost:8000/";
     const [loader, setLoader] = useState(false)
     const apqItem = [{
         "type": 0,

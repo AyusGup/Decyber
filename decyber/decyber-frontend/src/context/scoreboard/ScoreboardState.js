@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import ScoreboardContext from "./scoreboardContext";
 
 const ScoreboardState = (props) => {
-    // const host = "https://decyber.onrender.com";
-    const host = "https://decyber.onrender.com";
+    // const host = "http://localhost:8000/";
+    const host = "http://localhost:8000/";
     let initialstate = [];
     const [usersScores, setUsersScores] = useState(initialstate);
 

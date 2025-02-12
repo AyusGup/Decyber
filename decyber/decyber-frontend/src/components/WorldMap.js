@@ -27,7 +27,7 @@ const WorldMap = () => {
   useEffect(() => {
     const currentTime = new Date();
     const goalTime = new Date(currentTime);
-    goalTime.setHours(17, 11, 0, 0); // Set to today 23:54
+    goalTime.setHours(23,59, 0, 0); //Yaha time change karna hota hai, kripya kardein warna fukc up ho jayega
 
     const timeDifference = goalTime.getTime() - currentTime.getTime();
     if (timeDifference > 0) {
