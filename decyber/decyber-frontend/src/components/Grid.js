@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const initialGridState = [
   { id: "A1", clue: "Start here!", answer: "", unlocked: true, correct: false, showClue: false },
-  { id: "A2", clue: "Clue for A2", answer: "answer2", unlocked: false, correct: false, showClue: false },
-  { id: "B1", clue: "Clue for B1", answer: "answerB1", unlocked: false, correct: false, showClue: false },
-  { id: "B2", clue: "Clue for B2", answer: "answerB2", unlocked: false, correct: false, showClue: false },
+  { id: "A2", clue: "Clue for A2", answer: "answer2", unlocked: true, correct: false, showClue: false },
+  { id: "B1", clue: "Clue for B1", answer: "answerB1", unlocked: true, correct: false, showClue: false },
+  { id: "B2", clue: "Clue for B2", answer: "answerB2", unlocked: true, correct: false, showClue: false },
   // Add more grid cells here with their respective clues and answers
 ];
 
@@ -24,7 +24,7 @@ const Grid = () => {
 
   const handleBoxClick = (id) => {
     if (gameOver) return;
-
+    console.log("Box clicked:", id);
     const selected = grid.find((box) => box.id === id);
     if (selected.unlocked) {
       setSelectedBox(selected);
@@ -33,21 +33,18 @@ const Grid = () => {
   };
 
   const handleSubmitAnswer = () => {
+    console.log("Submit answer clicked");
+    console.log("Selected box:", selectedBox);
     if (!selectedBox) return;
-
+    console.log("User answer:", userAnswer);
     if (userAnswer.toLowerCase() === selectedBox.answer.toLowerCase()) {
       const newGrid = grid.map((box) =>
         box.id === selectedBox.id
           ? { ...box, correct: true, showClue: true }
           : box
       );
-
-      // Unlock the next random box (for simplicity, unlocking the next in array)
-      const nextBoxIndex = grid.findIndex((box) => box.id === selectedBox.id) + 1;
-      if (newGrid[nextBoxIndex]) {
-        newGrid[nextBoxIndex].unlocked = true;
-      }
-
+      console.log("Correct answer!");
+      
       setGrid(newGrid);
       setScore(score + 1);
       setSelectedBox(null);
@@ -57,7 +54,7 @@ const Grid = () => {
         setGameOver(true);
       }
     } else {
-      setGameOver(true);
+      // setGameOver(true);
     }
   };
 

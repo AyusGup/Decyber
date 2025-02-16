@@ -47,81 +47,92 @@ export default function About() {
         <div className="subteam">
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/NISSAN.jpg" alt="error" />
+              <img className="profile_photo" src="/AYAN.jpg" alt="error" />
             </div>
-            <div className="member_name">Nissan Kumar</div>
+            <div className="member_name">Ayan Mahajan</div>
             <div className="desc">
               President, Mathematics and Computing Branch, 3rd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/aman.jpg" alt="error" />
+              <img className="profile_photo" src="/ADITYA.jpg" alt="error" />
             </div>
-            <div className="member_name">Aman Gupta</div>
+            <div className="member_name">Aditya Pratap Singh</div>
             <div className="desc">
-              Vice President, Software Engineering Branch, 3rd Year
+              Vice President, Computer Science 3rd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/CHARVI.jpg" alt="error" />
+              <img className="profile_photo" src="/prashant.png" alt="error" />
             </div>
-            <div className="member_name">Charvi Solanki</div>
+            <div className="member_name">Prashant Kaushik</div>
             <div className="desc">
-              Vice President, Mathematics and Computing Branch, 3rd Year
+              Vice President, Information Technology, 3rd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/HARSHIT.jpg" alt="error" />
+              <img className="profile_photo" src="/titiksha.jpg" alt="error" />
             </div>
-            <div className="member_name">Harshit Khurana</div>
+            <div className="member_name">Titiksha Sharma</div>
             <div className="desc">
-              Head Of Operations , Mathematics and Computing Branch, 3rd Year
+              Chief Coordinator, Computer Science 3rd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/SHIVAM.jpg" alt="error" />
+              <img className="profile_photo" src="/ADIT.jpg" alt="error" />
             </div>
-            <div className="member_name">Shivam Mittal</div>
+            <div className="member_name">Adit Gupta</div>
             <div className="desc">
-              Research Head, Mathematics and Computing Branch, 3rd Year
+              Director, Computer Science 3rd Year
             </div>{" "}
           </div>
+          <div className="cards">
+            <div className="image_container">
+              <img className="profile_photo" src="/DIVYANSHU.jpg" alt="error" />
+            </div>
+            <div className="member_name">Divyanshu Bansal</div>
+            <div className="desc">
+              Strategic Director , Mathematics and Computing Branch, 3rd Year
+            </div>{" "}
+          </div>
+          <div className="cards">
+            <div className="image_container">
+              <img className="profile_photo" src="/aryan.jpg" alt="error" />
+            </div>
+            <div className="member_name">Aryan Goel</div>
+            <div className="desc">
+              Treasurer, Mathematics and Computing Branch, 3rd Year
+            </div>{" "}
+          </div>
+          
         </div>
         <div className="container my-3">
           <h1 style={{ textAlign: "center", color: "cyan" }}>
             Development Team
           </h1>
         </div>
+          
         <div className="subteam">
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/AYUSH.jpg" alt="error" />
+              <img className="profile_photo" src="/hitesh.jpg" alt="error" />
             </div>
-            <div className="member_name">Ayush Gupta</div>
+            <div className="member_name">Hitesh Mehta</div>
             <div className="desc">
-              Technical head, Computer Engineering Branch, 2nd Year
+              General Coordinator, Computer Science 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/ABHIMANYU.jpg" alt="error" />
+              <img className="profile_photo" src="/arjit.jpg" alt="error" />
             </div>
-            <div className="member_name">Abhimanyu Kumar</div>
+            <div className="member_name">Arjit Saxena</div>
             <div className="desc">
-              Content head, Computer Engineering Branch, 2nd Year
-            </div>{" "}
-          </div>
-          <div className="cards">
-            <div className="image_container">
-              <img className="profile_photo" src="/HARDIK.jpg" alt="error" />
-            </div>
-            <div className="member_name">Hardik Garg</div>
-            <div className="desc">
-              Student Coordinator, Computer Engineering Branch, 2nd Year
+              Technical Head, Computer Science 2nd Year
             </div>{" "}
           </div>
         </div>
@@ -131,58 +142,50 @@ export default function About() {
         <div className="subteam">
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/ADITYA.jpg" alt="error" />
+              <img className="profile_photo" src="/sarannye.jpg" alt="error" />
             </div>
-            <div className="member_name">Aditya Pratap Singh</div>
+            <div className="member_name">Sarannye Rathi</div>
             <div className="desc">
-              Technical head, Computer Engineering Branch, 2nd Year
+              Joint Coordinator, Mechanical Engineering, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/ADIT.jpg" alt="error" />
+              <img className="profile_photo" src="/nancy.jpg" alt="error" />
             </div>
-            <div className="member_name">Adit Gupta</div>
+            <div className="member_name">Nancy Singh</div>
             <div className="desc">
-              Joint Secretary, Computer Engineering Branch, 2nd Year
+              Joint Coordinator, Information Technology, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/DIVYANSHU.jpg" alt="error" />
+              <img className="profile_photo" src="/aggarwal.jpg" alt="error" />
             </div>
-            <div className="member_name">Divyanshu Bansal</div>
+            <div className="member_name">Harshit Aggarwal</div>
             <div className="desc">
-              Ml head, Mathematics and Computing Branch, 2nd Year
+              Corporate Head, Computer Science 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/AYAN.jpg" alt="error" />
+              <img className="profile_photo" src="/jayasri.jpg" alt="error" />
             </div>
-            <div className="member_name">Ayan</div>
+            <div className="member_name">Jayasri</div>
             <div className="desc">
-              Design head, Computer Engineering Branch, 2nd Year
+              PR Head, BioTechnology, 2nd Year
             </div>{" "}
           </div>
           <div className="cards">
             <div className="image_container">
-              <img className="profile_photo" src="/ANSHUMAAN.jpg" alt="error" />
+              <img className="profile_photo" src="/dhruv.jpg" alt="error" />
             </div>
-            <div className="member_name">Anshumaan</div>
+            <div className="member_name">Dhruv Dawar</div>
             <div className="desc">
-              Design head, Computer Engineering Branch, 2nd Year
+              Technical Head, Computer Science 2nd Year
             </div>{" "}
           </div>
-          <div className="cards">
-            <div className="image_container">
-              <img className="profile_photo" src="/HIMANSHU.jpg" alt="error" />
-            </div>
-            <div className="member_name">Himesh Goyal</div>
-            <div className="desc">
-              Student Coordinator, Mathematics and Computing Branch, 2nd Year
-            </div>{" "}
-          </div>
+          
         </div>
         <div className="container my-3">
           <h1 style={{ textAlign: "center", color: "cyan" }}>End Credits</h1>
