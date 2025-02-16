@@ -2,23 +2,23 @@ import React from 'react'
 
 export default function Rules() {
     const ruleStyle = {
-        color: 'cyan' // Set text color to cyan
+        color: '#e0b31d' // Set text color to #e0b31d
       };
     return (
         <>
             <div className='container my-3'>
-                <h1 style={{ textAlign: "center", margin: "1rem 0", color: "cyan" }}>Rules</h1>
+                <h1 style={{ textAlign: "center", margin: "1rem 0", color: "#e0b31d" }}>Rules</h1>
             </div>
             <div className="container my-3">
                 <br />
-                <h5 style={{ color: "cyan" }}>
+                <h5 style={{ color: "#e0b31d" }}>
                 <p style={{fontWeight: "bold"}}>Round 1: DeCyber Quiz Extravaganza</p>
                 In the initial round, teams will engage in a traditional quiz format, answering a series of
                 questions to accumulate points. Correct responses will contribute to their overall score, while
                 incorrect answers result in no points being awarded. This segment sets the foundation for the
                 subsequent rounds and establishes an initial leaderboard.
                 </h5>
-                <h5 style={{ color: "cyan" }}>
+                <h5 style={{ color: "#e0b31d" }}>
                 <p style={{fontWeight: "bold"}}>Round 2: DeCyber Multimedia Challenge</p>
                 Building on the foundation laid in Round 1, the second round introduces a dynamic
                 multimedia element. Questions will be presented in various formats, including audio, images,
@@ -28,7 +28,7 @@ export default function Rules() {
                 engaging and mentally demanding.
                 </h5>
                 <br />
-                <h5 style={{ color: "cyan" }}>
+                <h5 style={{ color: "#e0b31d" }}>
                 Total Scores Calculation
                 After the completion of the first two rounds, the cumulative scores of each team will be
                 meticulously calculated after some modifications and recorded. The teams with 0 score in
@@ -36,7 +36,7 @@ export default function Rules() {
                 The competitive spirit intensifies as teams position themselves for the ultimate challenge in
                 the final round.
                 </h5>
-                <h5 style={{ color: "cyan" }}>
+                <h5 style={{ color: "#e0b31d" }}>
                 <p style={{fontWeight: "bold"}}>Round 3: Final War</p>DeCyber Capture the Company Challenge
                 The climax of DeCyber unfolds in the captivating Capture the Company Challenge. Teams
                 will compete to capture valuable points by strategically selecting companies aligned with

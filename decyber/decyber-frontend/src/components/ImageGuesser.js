@@ -3,17 +3,23 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 const path = "../../public/";
 const images = [
-    // Replace with actual image file paths
-    "image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"
-    
-];
-for(let i in images){
-    i=path+i;
-}
-
+   "image19.jpg","image20.jpg", "image2.png", "image3.png", "image4.png","image18.png", "image1.jpg",
+    "image5.png", "image6.png", "image7.png",
+    "image8.png", "image9.png", "image10.png",
+    "image11.png", "image12.png", "image13.jpg",
+    "image14.jpg", "image15.png", "image16.jpg",
+    "image17.jpg", "image21.png", "image22.png",
+"image23.png", "image24.png", "image25.png",
+"image26.png", "image27.png", "image28.png",
+"image29.png", "image30.png"
+]
+// for(let i=0;i<images.length;i++) {
+//     images[i] = path+images[i];
+// }
+console.log(images);
 const answers = [
-    // Replace with actual correct answers for each image
-    "stree 2", "phir aayi hasseen dilruba", "ctrl", "raanjhanaa"
+     "Taarak Mehta Ka Ooltah Chashmah", "Balika Vadhu","Kuch Rang Pyar Ke Aise Bhi", "Anupamaa", "Sarabhai vs Sarabhai", "Made in Heaven","Rocket Boys", "Panchayat", "Inside Edge", "Gullak", "Desi Girl", "Ek Chatur Naar Badi Hoshiyaar", "Achchi Lagti Ho", "Papa Kehte Hain", "Chak Dhoom Dhoom", "Andhadhun", "Life in a... Metro", "Thappad", "English Vinglish", "Dil Se..", "Damini", "Ajnabee","Deewar","Ishq","Masaan",
+     "Ae Dil Hai Mushkil","Dilwale Dulhania Le Jayenge","Krrish","Hum Saath - Saath Hain","Shaandaar"
 ];
 const ImageGuesser = ({ timeLimit = 1800 }) => {
     const navigate = useNavigate();
@@ -55,7 +61,7 @@ const ImageGuesser = ({ timeLimit = 1800 }) => {
         e.preventDefault();
         if (answeredQuestions[currentIndex]) return;
 
-        if (userInput.toLowerCase().trim() === answers[currentIndex].toLowerCase()) {
+        if (userInput.toLowerCase().trim() === answers[currentIndex].toLowerCase().trim()) {
             setScore(prevScore => prevScore + 1);
             setAnsweredQuestions(prev => {
                 const updated = { ...prev, [currentIndex]: true };

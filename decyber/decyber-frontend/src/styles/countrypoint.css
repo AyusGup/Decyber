@@ -1,11 +1,11 @@
 
 .CountryPoint{
-    background-color : #01171b;
+    background-color :transparent;
     width: 100%;
     height: 60vh;
 }
 .cp-content{
-    color:cyan;
+    color:#e0b31d;
     margin: auto;
     margin-top: 5rem;
     width: 60vw;
@@ -28,7 +28,7 @@
 }
 .cp-subcontent textarea:focus{
     outline: 1px solid lightgreen;
-    caret-color: cyan;
+    caret-color: #e0b31d;
     font-weight: 400;
     color: white;
 }

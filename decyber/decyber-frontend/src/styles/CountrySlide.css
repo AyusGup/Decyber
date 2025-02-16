@@ -60,7 +60,7 @@
     height: 150px;
     border-radius: 5px;
     /* background-image: linear-gradient(rgb(0, 255, 255),rgba(0, 255, 255, 0.349),rgba(0, 255, 255, 0.103), rgba(255, 255, 0, 0)); */
-    border: cyan 5px solid;
+    border: #e0b31d 5px solid;
     display: flex;
     align-items: center;
 }

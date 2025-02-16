@@ -17,7 +17,7 @@ const Sidebar = () => {
                 className="nav-link active"
                 aria-current="page"
                 to="/"
-                style={{ color: "cyan", fontSize: "5vw", fontWeight: "600" }}
+                style={{ color: "#e0b31d", fontSize: "5vw", fontWeight: "600" }}
               >
                 Home
               </Link>
@@ -28,7 +28,7 @@ const Sidebar = () => {
                 className="nav-link active"
                 aria-current="page"
                 to="/about"
-                style={{ color: "cyan", fontSize: "5vw", fontWeight: "600" }}
+                style={{ color: "#e0b31d", fontSize: "5vw", fontWeight: "600" }}
               >
                 About
               </Link>
@@ -39,7 +39,7 @@ const Sidebar = () => {
                 className="nav-link active"
                 aria-current="page"
                 to="/dashboard"
-                style={{ color: "cyan", fontSize: "5vw", fontWeight: "600" }}
+                style={{ color: "#e0b31d", fontSize: "5vw", fontWeight: "600" }}
               >
                 User
               </Link>
@@ -49,7 +49,7 @@ const Sidebar = () => {
                 className="nav-link active"
                 aria-current="page"
                 to="/rules"
-                style={{ color: "cyan", fontSize: "5vw", fontWeight: "600" }}
+                style={{ color: "#e0b31d", fontSize: "5vw", fontWeight: "600" }}
               >
                 Rules
               </Link>

@@ -50,7 +50,7 @@ export default function Login(props) {
                         <label htmlFor="exampleInputPassword1" className="form-label" style={{ color: "white" }} ><h3>Team Password</h3></label>
                         <input type="password" className="form-control" name="team_password" id="team_password" value={credentials.team_password} onChange={onChange} />
                     </div>
-                    <button type="submit" className="btn btn-primary" style={{ backgroundColor: "#212529", color: "cyan", border: "none" }}>Login</button>
+                    <button type="submit" className="btn btn-primary" style={{ backgroundColor: "#212529", color: "#e0b31d", border: "none" }}>Login</button>
                     <hr style={{ color: 'white' }} />
                     <div className='form-text mt-3'><p> New to DeCyber ?</p></div>
                     <Link to="/signup"><button type="submit" className="btn btn-primary my-3" style={{ backgroundColor: "#212529", color: "lightgreen", border: "none" }}>Signup</button></Link>

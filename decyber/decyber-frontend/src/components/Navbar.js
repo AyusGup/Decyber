@@ -30,7 +30,7 @@ export default function Navbar(props) {
               className="nav-link active"
               aria-current="page"
               to="/leaderboard"
-              style={{ color: "cyan", fontSize: "5vh", fontWeight: "600" }}
+              style={{ color: "#e0b31d", fontSize: "5vh", fontWeight: "600" }}
             >
               Scoreboard
             </Link>
@@ -39,10 +39,10 @@ export default function Navbar(props) {
               <Link
                 className="nav-link active"
                 to="/ap"
-                style={{ color: "cyan", fontSize: "25px", fontWeight: "600" }}
+                style={{ color: "#e0b31d", fontSize: "25px", fontWeight: "600" }}
               >
                 AP{" "}
-                <sup style={{ color: "cyan", fontWeight: "600" }}>
+                <sup style={{ color: "#e0b31d", fontWeight: "600" }}>
                   {user.ap}
                 </sup>
               </Link>
@@ -54,7 +54,7 @@ export default function Navbar(props) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="cyan"
+                  fill="#e0b31d"
                   className="bi bi-person-fill"
                   viewBox="0 0 16 16"
                 >
@@ -70,7 +70,7 @@ export default function Navbar(props) {
                   className="btn"
                   style={{
                     backgroundColor: "#212529",
-                    color: "cyan",
+                    color: "#e0b31d",
                     fontSize: "5vh",
                     fontWeight: "600",
                   }}
@@ -86,7 +86,7 @@ export default function Navbar(props) {
                   className="btn"
                   style={{
                     backgroundColor: "#212529",
-                    color: "cyan",
+                    color: "#e0b31d",
                     fontSize: "5vh",
                     fontWeight: "600",
                   }}

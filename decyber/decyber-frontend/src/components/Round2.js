@@ -11,7 +11,7 @@ const Round2 = () => {
                   className="btn"
                   style={{
                     backgroundColor: "#212529",
-                    color: "cyan",
+                    color: "#e0b31d",
                     fontSize: "5vh",
                     fontWeight: "600",
                   }}

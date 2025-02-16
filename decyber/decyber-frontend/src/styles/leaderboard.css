@@ -37,7 +37,7 @@ table tbody tr th {
 }
 
 table tbody tr td {
-    color: cyan;
+    color: #e0b31d;
 }
 
 @media screen and (max-width :540px) {

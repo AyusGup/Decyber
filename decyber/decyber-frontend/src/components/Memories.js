@@ -5,10 +5,10 @@ export default function Memories() {
     return (
         <>
             <div className='container my-3'>
-                <h1 style={{ textAlign: "center", margin: "1rem 0", color: "cyan" }}>OUR TEAM</h1>
+                <h1 style={{ textAlign: "center", margin: "1rem 0", color: "#e0b31d" }}>OUR TEAM</h1>
             </div>
             <div className="container my-3">
-                <h5 style={{ color: "cyan" }}>
+                <h5 style={{ color: "#e0b31d" }}>
                     DeCyber, a multiplayer game developed for a tech fest, requires players to decrypt country-specific codes to capture countries, following the hypothetical scenario of a cyber-war in World War III.
                     The website has already attracted 150+ visitors and counting, featuring a responsive design, a secure and robust backend, and fast loading times. Overall, the website’s attractive and clean appearance makes it an appealing experience for visitors.
                 </h5>
@@ -105,11 +105,11 @@ export default function Memories() {
                     </div>
                 </div>
                 <div className="container my-3">
-                    <h1 style={{ textAlign: "center", color: "cyan" }}>End Credits</h1>
-                    <h5 style={{ textAlign: "center", color: "cyan" }}>
+                    <h1 style={{ textAlign: "center", color: "#e0b31d" }}>End Credits</h1>
+                    <h5 style={{ textAlign: "center", color: "#e0b31d" }}>
                         We thank every person that came forward to do PR for this event.🙏
                     </h5>
-                    <h5 style={{ textAlign: "center", color: "cyan" }}>
+                    <h5 style={{ textAlign: "center", color: "#e0b31d" }}>
                         We thank every contestant that came to play this game, this event couldn't be possible without you guys.😉
                     </h5>
                 </div>

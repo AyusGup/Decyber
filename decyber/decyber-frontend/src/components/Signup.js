@@ -47,7 +47,7 @@ export default function Signup(props) {
                         <div className="mb-3">
                             <label htmlFor="exampleInputPassword1" className="form-label" style={{ color: "aquamarine" }}><h5>Team Password</h5></label>
                             <input type="password" className="form-control" name="team_password" id="team_password" value={credentials.team_password} onChange={onChange} />
-                            <div id="password" className="form-text" style={{ color: "cyan" }}>Enter a strong password. <span style={{ fontSize: "1rem" }}>💪</span></div>
+                            <div id="password" className="form-text" style={{ color: "#e0b31d" }}>Enter a strong password. <span style={{ fontSize: "1rem" }}>💪</span></div>
                         </div>
                     </div>
                     <hr style={{ color: "rgb(91, 253, 202)" }} />
@@ -61,12 +61,12 @@ export default function Signup(props) {
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Email address</h5></label>
                                 <input type="email" className="form-control" name="team_leader_email" id="team_leader_email" aria-describedby="emailHelp" value={credentials.team_leader_email} onChange={onChange} />
-                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                                <div id="emailHelp" className="form-text" style={{ color: "#e0b31d", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Contact</h5></label>
                                 <input type="tel" className="form-control" name="team_leader_contact" id="team_leader_email" aria-describedby="emailHelp" value={credentials.team_leader_contact} onChange={onChange} />
-                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                                <div id="emailHelp" className="form-text" style={{ color: "#e0b31d", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label"><h5>College</h5></label>
@@ -83,12 +83,12 @@ export default function Signup(props) {
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Email address</h5></label>
                                 <input type="email" className="form-control" name="team_member_1_email" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_1_email} onChange={onChange} />
-                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                                <div id="emailHelp" className="form-text" style={{ color: "#e0b31d", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Contact</h5></label>
                                 <input type="tel" className="form-control" name="team_member_1_contact" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_1_contact} onChange={onChange} />
-                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                                <div id="emailHelp" className="form-text" style={{ color: "#e0b31d", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label"><h5>College</h5></label>
@@ -104,12 +104,12 @@ export default function Signup(props) {
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Email address</h5></label>
                                 <input type="email" className="form-control" name="team_member_2_email" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_2_email} onChange={onChange} />
-                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                                <div id="emailHelp" className="form-text" style={{ color: "#e0b31d", margin: ".5rem 0" }}>We'll never share your email with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label"><h5>Contact</h5></label>
                                 <input type="tel" className="form-control" name="team_member_2_contact" id="team_member_1_email" aria-describedby="emailHelp" value={credentials.team_member_2_contact} onChange={onChange} />
-                                <div id="emailHelp" className="form-text" style={{ color: "cyan", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
+                                <div id="emailHelp" className="form-text" style={{ color: "#e0b31d", margin: ".5rem 0" }}>We'll never share your contact with anyone else. <span style={{ fontSize: "1rem" }}>🤫</span></div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label"><h5>College</h5></label>

@@ -44,6 +44,9 @@ function App() {
   return (
     // all under JSX fragment(<> & </>) as we need to pass only one element in the return();
     <>
+    <video autoPlay loop muted playsInline className="background-video">
+        <source src="/public/bg.mp4" type="video/mp4" />
+    </video>
       <UserState>
         <CountryState>
           <ArmyState>

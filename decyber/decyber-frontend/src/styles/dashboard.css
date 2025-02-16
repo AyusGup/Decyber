@@ -1,6 +1,6 @@
 
 .Dashboard {
-    /* background-color: #01171b; */
+    /* background-color:transparent; */
     width: 100%;
     min-height: 100vh;
 }
@@ -58,7 +58,7 @@ table tbody tr th {
 }
 
 table tbody tr td {
-    color: cyan;
+    color: #e0b31d;
 }
 
 .user-status {
@@ -153,7 +153,7 @@ table tbody tr td {
 }
 
 .country-points .cps div {
-    /* background-color: #01171b; */
+    /* background-color:transparent; */
     width: 85%;
     height: 85%;
     border-radius: 50%;
@@ -186,7 +186,7 @@ table tbody tr td {
 }
 
 .army-points .aps>div {
-    /* background-color: #01171b; */
+    /* background-color:transparent; */
     width: 85%;
     height: 85%;
     border-radius: 50%;
@@ -279,12 +279,12 @@ table tbody tr td {
 }
 
 .member-details .member .basic-info .name {
-    color: cyan;
+    color: #e0b31d;
 }
 
 .designation {
     font-size: small;
-    color: cyan;
+    color: #e0b31d;
 }
 
 /*  Media Queries */

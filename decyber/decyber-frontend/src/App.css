@@ -1,3 +1,22 @@
+/* Fullscreen Video */
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Sends it to the background */
+}
+
+/* App Content Overlay */
+.app-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -90,7 +109,7 @@
 
 .next-button {
   background-color: #212529;
-  color: cyan;
+  color: #e0b31d;
   font-size: 20px;
   padding: 10px 20px;
   border: none;
@@ -109,10 +128,10 @@
   justify-content: center;
   min-height: 100vh ;
   background-color: black;
-  color: #00ffcc;
+  color: #e0b31d;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-  border: 2px solid cyan;
+  border: 2px solid #e0b31d;
   border-radius: 10px;
 }
 
@@ -148,7 +167,7 @@ h1 {
 .quiz-image {
   width: 50%;
   object-fit:contain;
-  border: 2px solid cyan;
+  border: 2px solid #e0b31d;
   border-radius: 10px;
   margin: 15px 0;
 }
@@ -163,7 +182,7 @@ h1 {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid cyan;
+  border: 1px solid #e0b31d;
   margin-bottom: 10px;
   background-color: black;
   color: white;
@@ -174,7 +193,7 @@ h1 {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: cyan;
+  background-color: #e0b31d;
   color: black;
   border: none;
   border-radius: 5px;
@@ -278,7 +297,7 @@ h1 {
 .sideContent{
   width: 100%;
     height: 100%;
-    border: cyan solid 5px;
+    border: #e0b31d solid 5px;
     border-radius: 20px;
     box-sizing: border-box;
     margin-block-end: 30px;

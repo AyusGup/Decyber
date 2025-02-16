@@ -2,10 +2,10 @@ body{
     margin: 0;
     padding: 0;
     color: #3D6343;
-    background-color : #01171b;
+    background-color :transparent;
 }
 .ArmyPoint{
-    background-color : #01171b;
+    background-color :transparent;
     width: 100vw;
     height: 100vh;
     margin-top: 5rem;
@@ -36,7 +36,7 @@ body{
 }
 .question-section textarea:focus{
     outline: 1px solid rgb(126, 255, 126);
-    caret-color: cyan;
+    caret-color: #e0b31d;
     font-weight: 400;
 }
 .question{
